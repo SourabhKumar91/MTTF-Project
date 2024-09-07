@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Card from './components/card/Card'
 import Navbar from './components/Navbar/Navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
    <>
    <Navbar></Navbar>
+   <div>
+    <Card image={"image link"} name={"Name"} description={"description"} membershipId={"membership id"} profileLink={"link to profile"}/>
+   </div>
    </>
   )
 }
