@@ -10,7 +10,7 @@ function Card({image, name, description, membershipId, profileLink}) {
               <img
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
                 src={image}
-                alt="blog"
+                alt="image"
               />
               <div className="p-6">
                 <h1 className="title-font text-2xl font-medium text-gray-900 mb-3">
@@ -23,8 +23,8 @@ function Card({image, name, description, membershipId, profileLink}) {
                 <h1 className="text-lg mb-3">
                   <span className='font-medium'>Member ID:</span> {membershipId}
                 </h1>
-                <div className="flex items-center flex-wrap bg-indigo-400 mx-auto rounded-full">
-                  <a className="text-white mx-auto inline-flex items-center md:mb-2 lg:mb-0" href={profileLink}>
+                <div className="flex items-center flex-wrap bg-indigo-400 mx-auto rounded-full w-52">
+                  <a className="text-white mx-auto inline-flex items-center md:mb-2 lg:mb-0 py-2" href={profileLink}>
                     View Profile
                   </a>
                 </div>

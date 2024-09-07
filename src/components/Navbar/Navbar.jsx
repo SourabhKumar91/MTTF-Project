@@ -1,5 +1,4 @@
 import React from 'react';
-import MembershipBox from '../HoverBox/MembershipBox';
 import Logo from '../Logo/Logo';
 import { navItems } from '../../assets/navitems';
 
