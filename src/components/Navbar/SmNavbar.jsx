@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Logo from '../Logo/Logo'
 import SmNavComponents from './SmNavComponents'
+import TogleButton from "/src/assets/navbar/toogleButton.png" 
 
 function SmNavbar() {
   const [togled, setTogled] = useState(false)
@@ -16,7 +17,7 @@ function SmNavbar() {
           <div className='flex gap-4'>
             <div className='flex justify-center items-center'>
               <button className='h-10 w-10 overflow-hidden' onClick={handelClick}>
-                <img src="/src/assets/navbar/toogleButton.png" alt="Toggle Button" className='h-full w-full object-cover' />
+                <img src={TogleButton} alt="Toggle Button" className='h-full w-full object-cover' />
               </button>
             </div>
             <div>
