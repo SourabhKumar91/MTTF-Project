@@ -6,6 +6,10 @@ import cirtificate from "../../assets/service/cirtificate.png";
 import {useGSAP} from "@gsap/react"
 import "../../styles/styles.css"
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 
@@ -13,23 +17,57 @@ function Services() {
 
     const sectiion1imgref = useRef();
     const sectiion2imgref = useRef();
+    const sectiion3imgref = useRef();
+    const sectiion4imgref = useRef();
 
     useGSAP(()=>{
         gsap.from(sectiion1imgref.current,{
             y:200,
             opacity:0,
             duration:3,
-            
+        
 
         })
         gsap.from(sectiion2imgref.current,{
             y:200,
             opacity:0,
             duration:3,
+            scrollTrigger: {
+                trigger: sectiion2imgref.current,
+                start: "top 90%", // Start animation when the top of the element is 80% from the top of the viewport
+                end: "bottom 30%", // End animation when the bottom of the element is 30% from the top of the viewport
+                scrub: true, // Allows for smooth scrubbing
+                
+            }
         })
+
+        gsap.from(sectiion3imgref.current,{
+            y:200,
+            opacity:0,
+            duration:3,
+            scrollTrigger: {
+                trigger: sectiion3imgref.current,
+                start: "top 80%", // Start animation when the top of the element is 80% from the top of the viewport
+                end: "bottom 30%", // End animation when the bottom of the element is 30% from the top of the viewport
+                scrub: true, // Allows for smooth scrubbing
+            }
+        })
+        gsap.from(sectiion4imgref.current,{
+            y:200,
+            opacity:0,
+            duration:3,
+            scrollTrigger: {
+                trigger: sectiion4imgref.current,
+                start: "top 70%", // Start animation when the top of the element is 80% from the top of the viewport
+                end: "bottom 30%", // End animation when the bottom of the element is 30% from the top of the viewport
+                scrub: true, // Allows for smooth scrubbing
+            }
+        })
+
+        
     })
 
-    useGSAP
+    
     return (
         <>   
             <div className="bg-gray-50">
@@ -77,7 +115,7 @@ function Services() {
                                 </p>
                             </div>
                             <div className="mx-auto w-1/2 md:w-1/3">
-                                <img src={internshipimg} alt="Training" />
+                                <img src={internshipimg} alt="Training" ref={sectiion3imgref} />
                             </div>
                         </div>
 
@@ -90,7 +128,7 @@ function Services() {
                                 </p>
                             </div>
                             <div className="mx-auto w-1/2 md:w-1/3  ">
-                                <img src={cirtificate} alt="Event" className='' />
+                                <img src={cirtificate} alt="Event" ref={sectiion4imgref} />
                             </div>
                         </div>
                     </div>
