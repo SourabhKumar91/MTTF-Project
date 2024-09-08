@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Logo from '../Logo/Logo'
 import SmNavComponents from './SmNavComponents'
-import TogleButton from "/src/assets/navbar/toogleButton.png" 
+import TogleButton from "/src/assets/navbar/toogleButton.png"
 
 function SmNavbar() {
   const [togled, setTogled] = useState(false)
@@ -25,7 +25,7 @@ function SmNavbar() {
             </div>
           </div>
           <div className='sm:flex justify-center items-center hidden'>
-            <button className="inline-flex font-serif text-lg text-[#EEEEEE] items-center bg-[#DC5F00] border-0 py-3 px-6 focus:outline-none hover:bg-[#ec9f64] rounded ">
+            <button className="inline-flex font-serif text-lg text-[#EEEEEE] items-center bg-[#DC5F00] border-0 py-3 px-6 focus:outline-none hover:bg-[#ec9f64] rounded w-full justify-center">
               Member Login
               <svg
                 fill="none"
