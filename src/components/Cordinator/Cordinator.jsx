@@ -33,7 +33,7 @@ const Cordinator = () => {
       };
 
     return (
-        <div className=" md:mx-auto py-12 md:px-3">
+        <div className=" md:mx-auto py-12 md:px-4">
             <Slider {...settings}>
                 {cards.map((card, index) => (
                     <div key={index} className="p-4">

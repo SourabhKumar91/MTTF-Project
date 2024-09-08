@@ -8,7 +8,7 @@ function Partners() {
         <div className='border flex flex-wrap gap-2 md:pl-10 mt-16 justify-center items-center border-none'>
             {partners.map((partner, index) => (
                 index > 2 ? (
-                    <div key={index} className=' mx-12'>
+                    <div key={index} className=' mx-12 mt-6'>
                         <img src={partner.src} alt={partner.alt} className="w-32 h-auto inline-block" />
                     </div>
                 ) : (
