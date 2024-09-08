@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Cordinator = () => {
     
     const settings = {
-        dots: true,  // Enable dots/pagination
+        dots: false,  // Enable dots/pagination
         infinite: true,  // Loop through slides
         speed: 500,
         slidesToShow: 3,  // Number of slides to show at once
