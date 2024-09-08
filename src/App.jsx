@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import Cordinator from './components/Cordinator/Cordinator'
 import Services from './components/services/Services'
 import Partners from './components/partners/partners'
+import HoverBox from './components/HoverBox/HoverBox'
 
 function App() {
 
