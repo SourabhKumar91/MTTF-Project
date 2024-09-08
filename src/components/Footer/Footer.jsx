@@ -9,6 +9,8 @@ function Footer() {
     const servicesLink = ["International & National Conference","Workshops","Skill Development Program","Online Internship Training"]
 
     const importantLink = ["Certificate","Term & Condition"]
+
+    const contact = ["contactus@mttf.in","+91-896-829-4003"]
     return (
         <>
             <footer class="text-gray-600 body-font   border-t-4  ">
@@ -19,7 +21,7 @@ function Footer() {
                     </div>
                     <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
                         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 class="title-font shadow font-medium text-lg text-gray-900 tracking-widest  mb-3">Our Company</h2>
+                            <h2 class="title-font shaow font-medium text-lg text-gray-900 tracking-widest  mb-3">Our Company</h2>
                             <nav class="list-none mb-10">
                                 {ourCompanyLink.map((link)=>(
                                     <li className='mt-2 '>
@@ -30,7 +32,7 @@ function Footer() {
                             </nav>
                         </div>
                         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-lg shadow mb-3">Services</h2>
+                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-lg  mb-3">Services</h2>
                             <nav class="list-none mb-10">
                             {servicesLink.map((link)=>(
                                     <li className='mt-2 '>
@@ -41,7 +43,7 @@ function Footer() {
                             </nav>
                         </div>
                         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-lg shadow mb-3">Important Links</h2>
+                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-lg  mb-3">Important Links</h2>
                             <nav class="list-none mb-10">
                             {importantLink.map((link)=>(
                                     <li className='mt-2 '>
@@ -51,27 +53,22 @@ function Footer() {
                             </nav>
                         </div>
                         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                            <h2 class="title-font font-medium text-gray-900 tracking-widest text-lg mb-3">Contect With Us</h2>
                             <nav class="list-none mb-10">
-                                <li>
-                                    <a class="text-gray-600 hover:text-gray-800">First Link</a>
+
+                            {contact.map((link)=>(
+                                    <li className='mt-2 '>
+                                    <a class="text-gray-600 hover:text-[#DC5F00]">{link}</a>
                                 </li>
-                                <li>
-                                    <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-                                </li>
-                                <li>
-                                    <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-                                </li>
-                                <li>
-                                    <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                                </li>
+                                ))}
+                               
                             </nav>
                         </div>
                     </div>
                 </div>
                 <div class="bg-gray-100">
                     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
+                        <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 MTTF —
                             <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
                         </p>
                         <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
