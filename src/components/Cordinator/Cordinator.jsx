@@ -13,7 +13,7 @@ const Cordinator = () => {
         slidesToShow: 3,  // Number of slides to show at once
         slidesToScroll: 1,  // Number of slides to scroll at once
         autoplay: true,  // Enable autoplay
-        autoplaySpeed: 5000,  // Autoplay speed in ms
+        autoplaySpeed: 2000,  // Autoplay speed in ms
         responsive: [
           {
             breakpoint: 768,
@@ -36,8 +36,8 @@ const Cordinator = () => {
         <div className=" md:mx-auto py-12 md:px-4">
             <Slider {...settings}>
                 {cards.map((card, index) => (
-                    <div key={index} className="p-4">
-                        <div className="max-w-sm mx-4 inline-block my-4 bg-white rounded-lg border border-gray-200 shadow-md">
+                    <div key={index} className="md:p-4">
+                        <div className="max-w-sm md:mx-4 inline-block my-4 bg-white rounded-lg border border-gray-200 shadow-md">
                             <div className="flex mt-4 ml-7">
                                 <img className="rounded-full border-2 border-gray-300 h-24 w-24" src={card.imageUrl} alt={card.name} />
                                 <div className='ml-10 mt-5'>
