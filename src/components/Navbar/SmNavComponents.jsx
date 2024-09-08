@@ -40,7 +40,7 @@ function SmNavComponents({ togled, setTogled }) {
     };
 
     return (
-        <div className={`z-30 absolute w-screen h-screen ${togled ? "block" : "hidden"} flex flex-col gap-5 overflow-x-hidden bg-white p-5`}>
+        <div className={`z-30 absolute w-screen h-screen ${togled ? "flex" : "hidden"} flex-col gap-5 overflow-x-hidden bg-white p-5`}>
             <div className=' flex content-between justify-between'>
                 <div>
                     <Logo />
