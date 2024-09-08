@@ -1,0 +1,21 @@
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #4f4f4f; /* Thumb color */
+    border-radius: 10px;  /* Round edges */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #ec9f64; /* Color on hover */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+    border-radius: 10px;  /* Round edges */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:active {
+    background: #616161; /* Active state color */
+  }

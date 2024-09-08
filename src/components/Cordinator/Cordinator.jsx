@@ -1,5 +1,5 @@
 import React from 'react';
-import { cards } from '../../assets/crads';
+import { cordinators } from '../../assets/cordinators/cordinators.js';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,7 +16,7 @@ const Cordinator = () => {
         autoplaySpeed: 2000,  // Autoplay speed in ms
         responsive: [
           {
-            breakpoint: 770,
+            breakpoint: 1125,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
@@ -35,7 +35,7 @@ const Cordinator = () => {
     return (
         <div className=" md:mx-auto py-12 md:px-4 w-screen overflow-x-hidden">
             <Slider {...settings}>
-                {cards.map((card, index) => (
+                {cordinators.map((card, index) => (
                     <div key={index} className="md:p-4">
                         <div className="max-w-sm md:mx-4 inline-block my-4 bg-white rounded-lg border border-gray-200 shadow-md">
                             <div className="flex mt-4 ml-7">
