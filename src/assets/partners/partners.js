@@ -1,6 +1,9 @@
+import BFGI from "/src/assets/partners/BFGI-logo.jpg"
+import poornima_college from "/src/assets/partners/poornima-college-of-engineering-jaipur.png"
+
 export const partners =[
-    { src: "/src/assets/partners/BFGI-logo.jpg", alt: "Baba Farid Group Of Institution"},
-    { src: "/src/assets/partners/poornima-college-of-engineering-jaipur.png", alt: "Poornima College Of Engineering"},
+    { src: BFGI, alt: "Baba Farid Group Of Institution"},
+    { src: poornima_college , alt: "Poornima College Of Engineering"},
     { src: "/src/assets/partners/PULogo.png", alt: "PU"},
     { src: "/src/assets/partners/aditya-college.jpg" , alt: "aditya college" },
     { src: "/src/assets/partners/ct-university.png", alt: "CT university"},
