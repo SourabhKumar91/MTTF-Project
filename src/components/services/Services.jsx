@@ -19,6 +19,8 @@ function Services() {
             y:200,
             opacity:0,
             duration:3,
+            
+
         })
         gsap.from(sectiion2imgref.current,{
             y:200,

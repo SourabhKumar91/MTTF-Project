@@ -1,12 +1,14 @@
 import React from 'react';
 import Logo from '../Logo/Logo';
 import { navItems } from '../../assets/navitems';
+import SmNavbar from './SmNavbar';
 
 function Navbar() {
     return (
         <>
             <header className="text-gray-600 body-font p-5 bg-[#EEEBEB]">
-                <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
+                {/* <SmNavbar /> */}
+                <div className="container mx-auto flex-wrap flex-col md:flex-row items-center hidden lg:flex">
                     <Logo />
                     <nav className="relative md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
                         {navItems.map((item) => (
