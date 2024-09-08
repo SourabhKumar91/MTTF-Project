@@ -13,7 +13,7 @@ function Footer() {
     const contact = ["contactus@mttf.in","+91-896-829-4003"]
     return (
         <>
-            <footer class="text-gray-600 body-font   border-t-4  ">
+            <footer class="text-gray-600 body-font   border-t-4 ">
                 <div class="container  px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                         <Logo/>

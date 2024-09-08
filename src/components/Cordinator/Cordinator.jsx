@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { cards } from '../../assets/crads';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -10,7 +10,7 @@ const Cordinator = () => {
         dots: true,  // Enable dots/pagination
         infinite: true,  // Loop through slides
         speed: 500,
-        slidesToShow: 2,  // Number of slides to show at once
+        slidesToShow: 3,  // Number of slides to show at once
         slidesToScroll: 1,  // Number of slides to scroll at once
         autoplay: true,  // Enable autoplay
         autoplaySpeed: 5000,  // Autoplay speed in ms
@@ -33,7 +33,7 @@ const Cordinator = () => {
       };
 
     return (
-        <div className="max-w-screen-lg mx-auto py-12 px-4">
+        <div className=" md:mx-auto py-12 md:px-3">
             <Slider {...settings}>
                 {cards.map((card, index) => (
                     <div key={index} className="p-4">
