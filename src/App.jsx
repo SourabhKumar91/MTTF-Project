@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import Cordinator from './components/Cordinator/Cordinator'
 import Services from './components/services/Services'
 import Partners from './components/partners/Partners'
+import Events from './components/events/Events'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
    <Services/>
    <Cordinator />
    <Partners />
+   {/* <Events /> */}
    <Footer/>
    </>
   )

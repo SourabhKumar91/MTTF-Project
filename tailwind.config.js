@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {},
   },
+  darkMode: false, // Disable dark mode
   plugins: [],
 }
 
