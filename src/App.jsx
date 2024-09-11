@@ -6,11 +6,13 @@ import Services from './components/services/Services'
 import Partners from './components/partners/Partners'
 import Events from './components/events/Events'
 
+
 function App() {
 
   return (
    <>
    <Navbar/>
+
    <Services/>
    <Cordinator />
    <Partners />

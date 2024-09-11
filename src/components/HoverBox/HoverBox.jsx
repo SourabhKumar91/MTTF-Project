@@ -2,10 +2,10 @@ import React from 'react';
 
 function HoverBox({ links }) {
   return (
-    <div className="bg-white border border-gray-200 rounded-lg shadow-md p-4 w-52 transition-transform transform hover:scale-105 hover:shadow-lg">
-      <ul className="list-none p-0 m-0">
+    <div className=" bg-white border border-gray-200 rounded-lg shadow-md p-0 w-52 transition-transform transform hover:scale-105 hover:shadow-lg">
+      <ul className="list-none p-0 m-0 ">
         {links.map((link) => (
-          <li key={link} className="py-2 border-b border-gray-200 text-gray-800 last:border-b-0">
+          <li key={link} className="px-4 py-2  hover:bg-[#DC5F00] hover:text-white  border-b border-gray-200 text-gray-800 last:border-b-0">
             {link}
           </li>
         ))}

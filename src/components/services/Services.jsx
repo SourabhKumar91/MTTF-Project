@@ -25,6 +25,14 @@ function Services() {
             y:200,
             opacity:0,
             duration:3,
+            scrollTrigger: {
+                trigger: sectiion2imgref.current,
+                start: "top 95%", // Start animation when the top of the element is 80% from the top of the viewport
+                end: "bottom 30%", // End animation when the bottom of the element is 30% from the top of the viewport
+                scrub: true, // Allows for smooth scrubbing
+                
+                
+            }
         
 
         })
@@ -70,9 +78,9 @@ function Services() {
     
     return (
         <>   
-            <div className="bg-gray-50">
-                <div className=' text-4xl p-4 shadow font-sers text-  text-center mt-20'>OUR Services: Tailored Solutions for <span className=' text-[#2ba1f0] font-bold'>Your Needs</span></div>
-                <div className="py-8 md:py-16 w-11/12 lg:w-10/12 xl:w-1200 m-auto">
+            <div className="bg-[#EFF6FF]">
+                <div className=' text-4xl p-4 shadow font-sers text-  text-center mt-0 pt-20'>OUR Services: Tailored Solutions for <span className=' text-[#2ba1f0] font-bold'>Your Needs</span></div>
+                <div className=" py-8 md:py-16 w-11/12 lg:w-10/12 xl:w-1200 m-auto">
                     <div className="space-y-16 ">
                         {/* First Section */}
                         <div  className="  space-y-8 md:space-y-0 text-center md:text-left md:space-x-16 md:justify-center md:flex md:items-center ">
@@ -91,7 +99,7 @@ function Services() {
                         </div>
 
                         {/* Second Section */}
-                        <div className="space-y-8 md:space-y-0 text-center md:text-left md:space-x-16 md:justify-around  md:flex md:items-center md:flex-row-reverse ">
+                        <div className="  space-y-8 md:space-y-0 text-center md:text-left md:space-x-16 md:justify-around  md:flex md:items-center md:flex-row-reverse ">
                             <div className="w-full md:w-[40%] space-y-4  ">
                                 <h3 className=" text-2xl font-bold font-serif md:text-3xl ">Skill Development Workshops</h3>
                                 <p className=' font-medium'>

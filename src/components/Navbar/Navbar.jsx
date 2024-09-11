@@ -4,9 +4,13 @@ import { navItems } from '../../assets/navitems';
 import SmNavbar from './SmNavbar';
 import HoverBox from '../HoverBox/HoverBox';
 
+import heroImg from "../../assets/heroimg.jpeg"
+import HeroSection from '../Cordinator/HeroSection/HeroSection';
+
 function Navbar() {
     return (
-        <>
+        <>      
+
                 <SmNavbar />
             <header className="text-gray-600 body-font p-5 bg-[#EEEBEB]  hidden lg:flex">
                 <div className="flex container mx-auto flex-wrap flex-col md:flex-row items-center">
@@ -22,7 +26,7 @@ function Navbar() {
                                 >
                                     {item.name}
                                 </a>
-                                <div className="absolute inset-x-0 bottom-0 top-12 h-1 bg-[#DC5F00] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300">
+                                <div className=" z-20 absolute inset-x-0 bottom-0 top-12 h-1 bg-[#DC5F00] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300">
                                {item.hoverLink.length < 1 ? null: <HoverBox links={item.hoverLink}/>}
                                 </div>
                             </div>
@@ -44,6 +48,7 @@ function Navbar() {
                     </button>
                 </div>
             </header>
+            <HeroSection image = {heroImg}/>
         </>
     );
 }

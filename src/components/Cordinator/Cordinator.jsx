@@ -38,7 +38,7 @@ const Cordinator = () => {
             <Slider {...settings}>
                 {cordinators.map((card, index) => (
                     <div key={index} className="md:p-4">
-                        <div className="max-w-sm md:mx-4 inline-block my-4 bg-white rounded-lg border border-gray-200 shadow-md">
+                        <div className="max-w-sm md:mx-4 inline-block my-4 hover:shadow-md  hover:shadow-[#DC5F00] bg-white rounded-lg border border-gray-200 shadow-md">
                             <div className="flex mt-4 ml-7">
                                 <img className="rounded-full border-2 border-gray-300 h-24 w-24" src={card.imageUrl} alt={card.name} />
                                 <div className='ml-10 mt-5'>
