@@ -34,7 +34,7 @@ const Cordinator = () => {
 
     return (
         <div className=" md:mx-auto py-12 px-4 w-screen overflow-x-hidden">
-            <h1 className='text-center text-4xl m-3 pb-6 font-medium border-b mx-32'>Executive officers/cordinators</h1>
+            <h1 className='text-center md:text-4xl m-3 pb-6 font-medium border-b mx-20 text-2xl'>Executive officers/cordinators</h1>
             <Slider {...settings}>
                 {cordinators.map((card, index) => (
                     <div key={index} className="md:p-4">

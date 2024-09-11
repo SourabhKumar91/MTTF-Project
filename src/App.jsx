@@ -14,7 +14,7 @@ function App() {
    <Services/>
    <Cordinator />
    <Partners />
-   {/* <Events /> */}
+   <Events />
    <Footer/>
    </>
   )
