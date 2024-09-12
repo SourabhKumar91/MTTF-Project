@@ -12,7 +12,7 @@ function Navbar() {
         <>      
 
                 <SmNavbar />
-            <header className="text-gray-600 body-font p-5 bg-[#EEEBEB]  hidden lg:flex">
+            <header className="text-gray-600  body-font p-5 bg-[#EEEBEB]  hidden lg:flex">
                 <div className="flex container mx-auto flex-wrap flex-col md:flex-row items-center">
                     <Logo />
                     <nav className="relative md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">

@@ -19,3 +19,27 @@
   .custom-scrollbar::-webkit-scrollbar-thumb:active {
     background: #616161; /* Active state color */
   }
+
+  /* App.css */
+@keyframes colorBlink {
+  0%, 100% {
+    opacity: 1;
+    background-color: #1d4ed8; /* Blue */
+    color: white;
+  }
+  25% {
+    background-color: #10b981; /* Green */
+    color: black;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    background-color: #f59e0b; /* Yellow */
+    color: white;
+  }
+}
+
+.color-blink-btn {
+  animation: colorBlink 2s infinite;
+}

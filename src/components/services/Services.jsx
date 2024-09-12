@@ -27,7 +27,7 @@ function Services() {
             duration:3,
             scrollTrigger: {
                 trigger: sectiion2imgref.current,
-                start: "top 95%", // Start animation when the top of the element is 80% from the top of the viewport
+                start: "top 110%", // Start animation when the top of the element is 80% from the top of the viewport
                 end: "bottom 30%", // End animation when the bottom of the element is 30% from the top of the viewport
                 scrub: true, // Allows for smooth scrubbing
                 
