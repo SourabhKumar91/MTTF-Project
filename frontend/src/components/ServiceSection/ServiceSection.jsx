@@ -1,12 +1,11 @@
 import React from 'react'
-import ServicesCard from '../ServiceCard/ServiceCard'
+import ServicesCard from './ServiceCard'
 import growthImg from "../../assets/ServiceImages/growth.gif"
 import levelup from "../../assets/ServiceImages/levelup.gif"
 import internship from "../../assets/ServiceImages/internship.gif"
 import webinar from "../../assets/ServiceImages/protection1.gif"
 import cirtificate from "../../assets/ServiceImages/certificate-icon.gif"
 import ok from "../../assets/ServiceImages/ok.gif"
-import event from "../../assets/ServiceImages/event.gif"
 
 function ServiceSection() {
 
