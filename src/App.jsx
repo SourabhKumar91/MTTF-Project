@@ -13,11 +13,11 @@ function App() {
    <>
    <Navbar/>
 
-   <Services/>
-   <Cordinator />
-   <Partners />
-   <Events />
-   <Footer/>
+   {/* <Services/> */}
+   {/* <Cordinator /> */}
+   {/* <Partners /> */}
+   {/* <Events /> */}
+   {/* <Footer/> */}
    </>
   )
 }

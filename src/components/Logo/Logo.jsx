@@ -5,8 +5,8 @@ import logo from "../../assets/Long@350.png"
 function Logo() {
     return (
         <>
-            <a className="flex title-font font-medium items-center text-gray-900 mb-0 ">
-                <img src={logo} alt="logo" className='h-14 '  />
+            <a href='/'>
+                <img src={logo} alt="Comapny logo" width={160} height={37}  />
             </a>
         </>
     )

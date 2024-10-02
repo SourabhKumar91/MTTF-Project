@@ -5,7 +5,7 @@ import right_arrow from "/src/assets/navbar/right-arrow.png"
 import down_arrow from "/src/assets/navbar/down-arrow.png"
 import next_arrow from "/src/assets/navbar/next-arrow.png"
 
-function SmNavComponents({ togled, setTogled }) {
+function SideBar({ togled, setTogled }) {
 
     const [items, setItems] = useState({
         aboutUs: false,
@@ -18,29 +18,28 @@ function SmNavComponents({ togled, setTogled }) {
         setTogled(prev => !prev)
     }
 
-    useEffect(() => {
-        if (togled) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = 'auto';
-        }
+    // useEffect(() => {
+    //     if (togled) {
+    //         document.body.style.overflow = 'hidden';
+    //     } else {
+    //         document.body.style.overflow = 'auto';
+    //     }
 
-        return () => {
-            document.body.style.overflow = 'auto';
-        };
-    }, [togled]);
+    //     return () => {
+    //         document.body.style.overflow = 'auto';
+    //     };
+    // }, [togled]);
 
     const toggleItem = (itemName) => {
         setItems(prevItems => ({
             ...prevItems,
             [itemName]: !prevItems[itemName]
         }));
-        console.log(items);
         
     };
 
     return (
-        <div className={` z-30 absolute w-screen h-screen ${togled ? "flex" : "hidden"} flex-col gap-5 overflow-x-hidden bg-white p-5`}>
+        <div className={` z-50 absolute w-screen h-screen ${togled ? "flex" : "hidden"} flex-col gap-5 overflow-x-hidden bg-white p-5`}>
             <div className=' flex content-between justify-between'>
                 <div>
                     <Logo />
@@ -184,4 +183,4 @@ function SmNavComponents({ togled, setTogled }) {
     )
 }
 
-export default SmNavComponents
+export default SideBar
