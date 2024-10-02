@@ -1,7 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import ServiceSection from './components/ServiceSection/ServiceSection'
-
+import Body from './components/Body/Body'
 
 function App() {
 
@@ -9,14 +9,9 @@ function App() {
    <>
 
    
-   <Navbanr/>
-   <div>
-   <ServiceSection/>
-   {/* <Services/> */}
-   {/* <Cordinator /> */}
-   {/* <Partners /> */}
-   {/* <Events /> */}
-   </div>
+   <Navbar/>
+   <Body />
+   {/* <ServiceSection/> */}
    {/* <Footer/> */}
    </>
   )

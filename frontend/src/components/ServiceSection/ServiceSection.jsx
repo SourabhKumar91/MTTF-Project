@@ -62,19 +62,16 @@ function ServiceSection() {
     ]
     
   return (
-    <div className=' p-4 w-full min-h-[400px] flex flex-wrap bg-[#f8f9fe] '>
-        
-
-         {servicesDetail.map((service)=>(
+    <div className=' p-4 w-full min-h-[400px] flex flex-wrap justify-center bg-[#f8f9fe] '>
+        {servicesDetail.map((service, index)=>(
             <ServicesCard 
+            key={index}
             Number={service.number} 
             title={service.title} 
             discription={service.discription} 
             logoGif={service.giflogo} 
             logoStatic={service.staticLogo}/>
-         ))}
-
-
+        ))}
     </div>
   )
 }
