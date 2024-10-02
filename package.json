@@ -1,0 +1,18 @@
+{
+  "name": "mttf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon Backend/server.js",
+    "start": "node Backend/server.js",
+    "build": "npm install && npm install --prefix Front-End && npm run build --prefix Front-End"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.0",
+    "path": "^0.12.7"
+  }
+}

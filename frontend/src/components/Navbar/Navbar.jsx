@@ -13,33 +13,33 @@ function Navbar() {
     return (
         <>
             <SideBar togled={togled} setTogled={setTogled} />
-            <header className=" absolute flex justify-center items-center w-full z-30">
+            <header className=" absolute flex justify-center items-center w-full z-30 text-m xl:text-xl">
                 <div className=' mx-6 rounded-full px-4 md:py-3 py-0 flex items-center justify-between w-full md:w-[80%] bg-[#ffffff10]' style={{ border: "1px solid rgba(255, 255, 255, 0.2)" }}>
                     <div className='flex space-x-4 md:my-2'>
-                        <Logo />
+                        <Logo theme={"light"} />
                     </div>
                     <div className='flex-1 flex justify-center text-[#FFFFFF]'>
-                        <nav className='hidden xl:flex space-x-6 font-medium'>
+                        <nav className='hidden lg:flex space-x-6 font-medium'>
                             <a href="" className='text-muted-foreground text-primary hover:text-blue-200'>Home</a>
-                            <div className='hidden xl:flex relative group'>
+                            <div className='hidden lg:flex relative group'>
                                 <button className='text-muted-foreground hover:text-primary flex items-center gap-1 hover:text-blue-200'>
                                     About Us
                                     <i className="fa-solid fa-angle-down text-sm mt-0.25" style={{ width: '1em', height: '1em', fontSize: '1em' }}></i>
                                 </button>
                             </div>
-                            <div className='hidden xl:flex relative group'>
+                            <div className='hidden lg:flex relative group'>
                                 <button className='text-muted-foreground hover:text-primary flex items-center gap-1 hover:text-blue-200'>
                                     Membership
                                     <i className="fa-solid fa-angle-down text-sm mt-0.25" style={{ width: '1em', height: '1em', fontSize: '1em' }}></i>
                                 </button>
                             </div>
-                            <div className='hidden xl:flex relative group'>
+                            <div className='hidden lg:flex relative group'>
                                 <button className='text-muted-foreground hover:text-primary flex items-center gap-1 hover:text-blue-200'>
                                     Chapters
                                     <i className="fa-solid fa-angle-down text-sm mt-0.25" style={{ width: '1em', height: '1em', fontSize: '1em' }}></i>
                                 </button>
                             </div>
-                            <div className='hidden xl:flex relative group'>
+                            <div className='hidden lg:flex relative group'>
                                 <button className='text-muted-foreground hover:text-primary flex items-center gap-1 hover:text-blue-200'>
                                     Awards
                                     <i className="fa-solid fa-angle-down text-sm mt-0.25" style={{ width: '1em', height: '1em', fontSize: '1em' }}></i>
@@ -70,7 +70,7 @@ function Navbar() {
                             </div>
                         </a>
                     </div>
-                    <div className='xl:hidden basis-1/2 text-right py-2 navmenubar items-center justify-center'>
+                    <div className='lg:hidden basis-1/2 text-right py-2 navmenubar items-center justify-center'>
                         <button onClick={handelClick}>
                             <i className="fa-solid fa-bars w-10 h-8 mt-1" style={{ fontSize: '1.5rem' }}></i>
                         </button>
