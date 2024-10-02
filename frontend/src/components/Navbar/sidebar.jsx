@@ -18,17 +18,17 @@ function SideBar({ togled, setTogled }) {
         setTogled(prev => !prev)
     }
 
-    // useEffect(() => {
-    //     if (togled) {
-    //         document.body.style.overflow = 'hidden';
-    //     } else {
-    //         document.body.style.overflow = 'auto';
-    //     }
+    useEffect(() => {
+        if (togled) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
 
-    //     return () => {
-    //         document.body.style.overflow = 'auto';
-    //     };
-    // }, [togled]);
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [togled]);
 
     const toggleItem = (itemName) => {
         setItems(prevItems => ({
@@ -39,7 +39,7 @@ function SideBar({ togled, setTogled }) {
     };
 
     return (
-        <div className={` z-50 absolute w-screen h-screen ${togled ? "flex" : "hidden"} flex-col gap-5 overflow-x-hidden bg-white p-5`}>
+        <div className={` z-50 absolute w-[50%] h-screen ${togled ? "flex" : "hidden"} flex-col gap-5 overflow-x-hidden bg-white p-5`}>
             <div className=' flex content-between justify-between'>
                 <div>
                     <Logo />
@@ -52,13 +52,13 @@ function SideBar({ togled, setTogled }) {
             </div>
             <div className=' mt-10 h-full flex flex-col gap-10 overflow-y-auto custom-scrollbar'>
                 <div>
-                    <div className='h-4  flex gap-3 justify-start items-center hover:text-[#DC5F00]'>
+                    <div className='h-4  flex gap-3 justify-start items-center'>
                         <img src={right_arrow} alt="right arrow" className='h-full object-cover' />
                         <span className='text-2xl font-medium'>Home</span>
                     </div>
                 </div>
                 <div>
-                    <button className='w-full hover:text-[#DC5F00]' onClick={()=>toggleItem("aboutUs")}>
+                    <button className='w-full' onClick={()=>toggleItem("aboutUs")}>
                         <div className='flex justify-between'>
                             <div className='h-4 flex gap-3 justify-start items-center'>
                                 <img src={right_arrow} alt="right arrow" className='h-full object-cover' />
@@ -75,17 +75,17 @@ function SideBar({ togled, setTogled }) {
                             </div>
                         </div>
                     </button>
-                    <div className={`${items.aboutUs?"block":"hidden"} px-7 pt-4 flex flex-wrap flex-col gap-2`}>
-                        <div className='text-lg font-medium hover:text-[#DC5f00]'>Our Vision</div>
-                        <div className='text-lg font-medium hover:text-[#DC5f00]'>Our Mission</div>
-                        <div className='text-lg font-medium hover:text-[#DC5f00]'>Governing Body</div>
-                        <div className='text-lg font-medium hover:text-[#DC5f00]'>Advisory Committe</div>
-                        <div className='text-lg font-medium hover:text-[#DC5f00]'>Executive Officer/Coordinators</div>
-                        <div className='text-lg font-medium hover:text-[#DC5f00]'>Contact Us</div>
+                    <div className={`${items.aboutUs?"block":"hidden"} px-7 pt-4 flex flex-wrap flex-col gap-4 m-5 mt-2`}>
+                        <div className='text-xl font-medium'>Our Vision</div>
+                        <div className='text-xl font-medium'>Our Mission</div>
+                        <div className='text-xl font-medium'>Governing Body</div>
+                        <div className='text-xl font-medium'>Advisory Committe</div>
+                        <div className='text-xl font-medium'>Executive Officer/Coordinators</div>
+                        <div className='text-xl font-medium'>Contact Us</div>
                     </div>
                 </div>
                 <div>
-                    <button className='w-full hover:text-[#DC5F00]'  onClick={()=>toggleItem("membership")}>
+                    <button className='w-full'  onClick={()=>toggleItem("membership")}>
                         <div className='flex justify-between'>
                             <div className='h-4 flex gap-3 justify-start items-center'>
                                 <img src={right_arrow} alt="right arrow" className='h-full object-cover' />
@@ -102,14 +102,14 @@ function SideBar({ togled, setTogled }) {
                             </div>
                         </div>
                     </button>
-                    <div className={`${items.membership?"block":"hidden"} px-7 pt-4 flex flex-wrap flex-col gap-2`}>
-                        <div className='text-lg font-medium hover:text-[#DC5f00]'>Individual Membership</div>
-                        <div className='text-lg font-medium hover:text-[#DC5f00]'>Institutional Membership</div>
-                        <div className='text-lg font-medium hover:text-[#DC5f00]'>MTTF</div>
+                    <div className={`${items.membership?"block":"hidden"} px-7 pt-4 flex flex-wrap flex-col gap-4 m-5 mt-2`}>
+                        <div className='text-xl font-medium'>Individual Membership</div>
+                        <div className='text-xl font-medium'>Institutional Membership</div>
+                        <div className='text-xl font-medium'>MTTF</div>
                     </div>
                 </div>
                 <div>
-                    <button className='w-full hover:text-[#DC5F00]'  onClick={()=>toggleItem("chapters")}>
+                    <button className='w-full'  onClick={()=>toggleItem("chapters")}>
                         <div className='flex justify-between'>
                             <div className='h-4 flex gap-3 justify-start items-center'>
                                 <img src={right_arrow} alt="right arrow" className='h-full object-cover' />
@@ -126,13 +126,13 @@ function SideBar({ togled, setTogled }) {
                             </div>
                         </div>
                     </button>
-                    <div className={`${items.chapters?"block":"hidden"} px-7 pt-4 flex flex-wrap flex-col gap-2`}>
-                        <div className='text-lg font-medium hover:text-[#DC5f00]'>About Chapters</div>
-                        <div className='text-lg font-medium hover:text-[#DC5f00]'>Students Chapter</div>
+                    <div className={`${items.chapters?"block":"hidden"} px-7 pt-4 flex flex-wrap flex-col gap-4 m-5 mt-2`}>
+                        <div className='text-xl font-medium'>About Chapters</div>
+                        <div className='text-xl font-medium'>Students Chapter</div>
                     </div>
                 </div>
                 <div>
-                    <button className='w-full hover:text-[#DC5F00]'  onClick={()=>toggleItem("awards")}>
+                    <button className='w-full'  onClick={()=>toggleItem("awards")}>
                         <div className='flex justify-between'>
                             <div className='h-4 flex gap-3 justify-start items-center'>
                                 <img src={right_arrow} alt="right arrow" className='h-full object-cover' />
@@ -150,13 +150,13 @@ function SideBar({ togled, setTogled }) {
                             </div>
                         </div>
                     </button>
-                    <div className={`${items.awards?"block":"hidden"} px-7 pt-4 flex flex-wrap flex-col gap-2`}>
-                        <div className='text-lg font-medium hover:text-[#DC5f00]'>Awards 2025</div>
-                        <div className='text-lg font-medium hover:text-[#DC5f00]'>Awards 2024</div>
+                    <div className={`${items.awards?"block":"hidden"} px-7 pt-4 flex flex-wrap flex-col gap-4 m-5 mt-2`}>
+                        <div className='text-xl font-medium'>Awards 2025</div>
+                        <div className='text-xl font-medium'>Awards 2024</div>
                     </div>
                 </div>
                 <div>
-                    <div className='h-4 flex gap-3 justify-start items-center hover:text-[#DC5F00]'>
+                    <div className='h-4 flex gap-3 justify-start items-center'>
                         <img src={right_arrow} alt="right arrow" className='h-full object-cover' />
                         <span className='text-2xl font-medium'>Events</span>
                     </div>
