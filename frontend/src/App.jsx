@@ -13,12 +13,16 @@ function App() {
 
   return (
    <>
-   <Navbar/>
-<ServiceSection/>
+
+   
+   <Navbanr/>
+   <div>
+   <ServiceSection/>
    {/* <Services/> */}
    {/* <Cordinator /> */}
    {/* <Partners /> */}
    {/* <Events /> */}
+   </div>
    {/* <Footer/> */}
    </>
   )
