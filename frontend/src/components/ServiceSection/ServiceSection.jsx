@@ -3,7 +3,7 @@ import ServicesCard from './ServiceCard'
 import growthImg from "../../assets/ServiceImages/growth.gif"
 import levelup from "../../assets/ServiceImages/levelup.gif"
 import internship from "../../assets/ServiceImages/internship.gif"
-import webinar from "../../assets/ServiceImages/protection1.gif"
+import webinar from "../../assets/ServiceImages/Protection1.gif"
 import growthImgstatic from "../../assets/ServiceImages/growthstatic.png"
 import levelupstatic from "../../assets/ServiceImages/levelupstatic.png"
 import internshipstatic from "../../assets/ServiceImages/internshipstatic.png"
