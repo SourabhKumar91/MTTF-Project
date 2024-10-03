@@ -39,7 +39,7 @@ function SideBar({ togled, setTogled }) {
     };
 
     return (
-        <div className={` z-50 absolute w-[50%] h-screen ${togled ? "flex" : "hidden"} flex-col gap-5 overflow-x-hidden bg-white p-5`}>
+        <div className={` z-50 absolute w-[75%] h-screen ${togled ? "flex" : "hidden"} flex-col gap-5 overflow-x-hidden bg-white p-5`}>
             <div className=' flex content-between justify-between'>
                 <div>
                     <Logo />
