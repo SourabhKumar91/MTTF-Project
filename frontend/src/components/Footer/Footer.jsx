@@ -12,10 +12,7 @@ function Footer() {
         <>
             <footer className="text-gray-600 body-font border-t-4  bg-white overflow-x-hidden">
                 <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-                    <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-                        <Logo />
-                        <p className="mt-2 text-sm text-gray-500">The MathTech Thinking Foundation (MTTF) is registered under Section 8 of the Companies Act 2013, Ministry of Corporate Affairs, Government of India.</p>
-                    </div>
+                    
                     <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
                             <h2 className="title-font font-medium text-lg text-gray-900 tracking-widest mb-3">Our Company</h2>
