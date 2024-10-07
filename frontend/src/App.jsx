@@ -15,15 +15,9 @@ function App() {
    <>
 
    
-   <Navbanr/>
-   <div>
+   <Navbar/>
    <ServiceSection/>
-   {/* <Services/> */}
-   {/* <Cordinator /> */}
-   {/* <Partners /> */}
-   {/* <Events /> */}
-   </div>
-   {/* <Footer/> */}
+   <Footer/>
    </>
   )
 }
