@@ -64,7 +64,7 @@ function ServiceSection() {
     return (
         <>
 
-            <h1 className=' font-serif  text-2xl lg:text-4xl font-semibold'>Our Professional Services for Every Requirement</h1>
+            <h1 className=' font-serif  text-2xl lg:text-4xl mb-8 font-semibold'>Our Professional Services for Every Requirement</h1>
             <div className='bg-gradient-to-r mb-10 from-blue-50 via-white to-indigo-100 p-4 pb-24 w-full min-h-[400px] flex flex-wrap justify-center bg-[#f8f9fe] '>
 
                 {servicesDetail.map((service, index) => (

@@ -54,9 +54,7 @@ const Cordinator = () => {
                                   className="rounded-full border-2 border-gray-200 h-24 w-24" 
                                   src={card.imageUrl} 
                                   alt={card.name} 
-                                  style={{
-                                    borderColor: "#F1C40F",  // Golden yellow to add a highlight
-                                  }}
+                                  
                                 />
                                 <div className='ml-10 mt-5'>
                                     <h5 className="text-[#2C3E50] text-xl font-medium mb-2">{card.name}</h5>

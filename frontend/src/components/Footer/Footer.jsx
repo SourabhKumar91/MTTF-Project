@@ -19,7 +19,7 @@ function Footer() {
                             <nav className="list-none mb-10">
                                 {ourCompanyLink.map((link, index) => (
                                     <li key={index} className='mt-2'>
-                                        <a className="text-gray-600 hover:text-[#DC5F00]">{link}</a>
+                                        <a className="text-gray-600 hover:text-blue-400 cursor-pointer">{link}</a>
                                     </li>
                                 ))}
                             </nav>
@@ -29,7 +29,7 @@ function Footer() {
                             <nav className="list-none mb-10">
                                 {servicesLink.map((link, index) => (
                                     <li key={index} className='mt-2'>
-                                        <a className="text-gray-600 hover:text-[#DC5F00]">{link}</a>
+                                        <a className="text-gray-600 hover:text-blue-400 cursor-pointer">{link}</a>
                                     </li>
                                 ))}
                             </nav>
@@ -39,7 +39,7 @@ function Footer() {
                             <nav className="list-none mb-10">
                                 {importantLink.map((link, index) => (
                                     <li key={index} className='mt-2'>
-                                        <a className="text-gray-600 hover:text-[#DC5F00]">{link}</a>
+                                        <a className="text-gray-600 hover:text-blue-400 cursor-pointer">{link}</a>
                                     </li>
                                 ))}
                             </nav>
@@ -49,7 +49,7 @@ function Footer() {
                             <nav className="list-none mb-10">
                                 {contact.map((link, index) => (
                                     <li key={index} className='mt-2'>
-                                        <a className="text-gray-600 hover:text-[#DC5F00]">{link}</a>
+                                        <a className="text-gray-600 hover:text-blue-400 cursor-pointer">{link}</a>
                                     </li>
                                 ))}
                             </nav>

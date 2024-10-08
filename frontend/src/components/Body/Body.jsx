@@ -2,6 +2,7 @@ import React from 'react';
 import BodyHeader from './BodyHeader';
 import ServiceSection from '../ServiceSection/ServiceSection';
 import Cordinator from '../Cordinator/Cordinator';
+import Parteners from '../Partners/Parteners';
 
 function Body() {
   return (
@@ -17,6 +18,7 @@ function Body() {
         <BodyHeader />
         <ServiceSection />
         <Cordinator/>
+        <Parteners/>
       </div>
     </div>
   );
