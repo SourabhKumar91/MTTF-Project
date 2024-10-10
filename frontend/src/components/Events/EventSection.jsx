@@ -1,25 +1,30 @@
-import React from 'react'
-import EventCard from './EventCard'
+import React from 'react';
+import EventCard from './EventCard';
+import aiimg from "../../assets/Events/AI.jpg";
+import ai2 from "../../assets/Events/ai2.jpg";
 
 function EventSection() {
   return (
-    <div  className=' min-h-[400px] flex gap-10 flex-wrap p-4'>
-         <EventCard
-        image="https://th.bing.com/th/id/OIP.DnFXRYz9Sc9bVLihM9G8qwAAAA?rs=1&pid=ImgDetMain" // Replace with your image URL
-        title="Tailwind Card"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.https://www.bing.com/images/search?view=detailV2&ccid=DnFXRYz9&id=398B9058FCB24ED3BABE1227596385F27C7DED92&thid=OIP.DnFXRYz9Sc9bVLihM9G8qwAAAA&mediaurl=https%3a%2f%2fgamefi.my%2fwp-content%2fuploads%2f2023%2f02%2f13Xb43WwoeYwQIAKYsCQg6g.png&exph=318&expw=474&q=chatgpt&simid=608007738944075829&FORM=IRPRST&ck=1D3DE504CBB6E904B43F049F9E85B22A&selectedIndex=2&itb=0"
-        buttonLabel="Learn More"
-        backgroundColor="bg-gradient-to-r from-blue-500 to-blue-600"
-      />
-       <EventCard
-        image="https://via.placeholder.com/300" // Replace with your image URL
-        title="Tailwind Card"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula."
-        buttonLabel="Learn More"
-        backgroundColor="bg-gradient-to-r from-blue-500 to-blue-600"
-      />
+    <div className='min-h-[400px] p-6 lg:p-10 max-w-7xl mx-auto overflow-hidden'>
+      <h1 className='text-2xl lg:text-4xl font-serif mb-8'>Upcoming Events...</h1>
+      {/* Flex container for event cards */}
+      <div className='flex flex-wrap justify-start gap-10'>
+        <EventCard
+          image={aiimg} // Replace with your image URL
+          title="ONE-WEEK WORKSHOP ON NEXT-GEN AI AND ML"
+          date="October 21, 2024 7:00pm - October 27,2024 9:00pm"
+          shotdate="October 21,2024"
+        />
+        <EventCard
+          image={ai2} // Replace with your image URL
+          title="IERG Awards 2025"
+          location="Sharda University, plot no 32, 34, Knowledge Park III, Greater Noida, India"
+          date="28 February 2024"
+          shotdate="28 February 2024"
+        />
+      </div>
     </div>
-  )
+  );
 }
 
-export default EventSection
+export default EventSection;
