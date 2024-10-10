@@ -3,6 +3,8 @@ import BodyHeader from './BodyHeader';
 import ServiceSection from '../ServiceSection/ServiceSection';
 import Cordinator from '../Cordinator/Cordinator';
 import Parteners from '../Partners/Parteners';
+import EventCard from "../Events/EventCard"
+import EventSection from '../Events/EventSection';
 
 function Body() {
   return (
@@ -19,6 +21,7 @@ function Body() {
         <ServiceSection />
         <Cordinator/>
         <Parteners/>
+       <EventSection/>
       </div>
     </div>
   );
