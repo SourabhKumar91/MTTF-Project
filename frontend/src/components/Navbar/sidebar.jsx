@@ -163,7 +163,7 @@ function SideBar({ togled, setTogled }) {
                 </div>
             </div>
             <div className='flex justify-center items-center w-full mb-10'>
-                <button className="inline-flex font-serif text-lg text-[#EEEEEE] items-center bg-[#DC5F00] border-0 py-3 px-6 focus:outline-none hover:bg-[#ec9f64] rounded w-full justify-center">
+                <button className="inline-flex font-serif text-lg text-[#EEEEEE] items-center bg-[#03518F] border-0 py-3 px-6 focus:outline-none hover:bg-[#8bb6da] rounded w-full justify-center">
                     Member Login
                     <svg
                         fill="none"

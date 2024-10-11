@@ -15,7 +15,7 @@ function Navbar() {
         <>
             <SideBar togled={togled} setTogled={setTogled} />
             <header className="absolute flex justify-center items-center w-full z-30 text-m xl:text-xl">
-                <div className='mx-4 rounded-full px-3 md:py-2 py-1 flex items-center justify-between w-full lg:w-10/12 bg-[#ffffff10]' 
+                <div className='mx-4 rounded-full px-3 md:py-4 py-1 flex items-center justify-between w-full lg:w-10/12 bg-[#ffffff10]' 
                     style={{ border: "1px solid rgba(255, 255, 255, 0.2)" }}>
                     
                     {/* Left section - Logo */}
