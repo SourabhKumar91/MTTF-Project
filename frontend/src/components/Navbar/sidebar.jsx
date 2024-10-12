@@ -4,8 +4,17 @@ import cross from "/src/assets/navbar/cross.png"
 import right_arrow from "/src/assets/navbar/right-arrow.png"
 import down_arrow from "/src/assets/navbar/down-arrow.png"
 import next_arrow from "/src/assets/navbar/next-arrow.png"
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { CSSPlugin } from 'gsap/CSSPlugin';
+
+gsap.registerPlugin(CSSPlugin);
 
 function SideBar({ togled, setTogled }) {
+
+    const sideMenuRef =  useRef()
+    const tl = useRef(gsap.timeline({ paused: true }));
 
     const [items, setItems] = useState({
         aboutUs: false,
@@ -16,19 +25,9 @@ function SideBar({ togled, setTogled }) {
 
     const handelClick = () => {
         setTogled(prev => !prev)
+        
     }
 
-    useEffect(() => {
-        if (togled) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = 'auto';
-        }
-
-        return () => {
-            document.body.style.overflow = 'auto';
-        };
-    }, [togled]);
 
     const toggleItem = (itemName) => {
         setItems(prevItems => ({
@@ -38,8 +37,22 @@ function SideBar({ togled, setTogled }) {
         
     };
 
+    useGSAP(() => {
+        tl.current.to(sideMenuRef.current, {
+            left: 0,
+            duration: 0.5,
+            
+        });
+
+        if (togled) {
+            tl.current.play();
+        } else {
+            tl.current.reverse();
+        }
+    }, [togled]);
+
     return (
-        <div className={` z-50 absolute w-[75%] h-screen ${togled ? "flex" : "hidden"} flex-col gap-5 overflow-x-hidden bg-white p-5`}>
+        <div  ref={sideMenuRef} className={` z-50 absolute  -left-[100%] w-[75%] lg:hidden h-screen flex-col gap-5 overflow-x-hidden bg-white p-5`}>
             <div className=' flex content-between justify-between'>
                 <div>
                     <Logo />
