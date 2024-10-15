@@ -61,7 +61,7 @@ function Partners() {
             <div className='bg-gradient-to-r from-blue-50 via-white to-indigo-100 w-full '>
 
                 <div className=' mt-20'>
-                    <h1 className="font-serif text-2xl lg:text-4xl mb-12 text-gray-700">Our Trusted Partners</h1>
+                    <h1 className="font-serif text-2xl lg:text-4xl mb-12 text-gray-700 text-center  pt-8">Our Trusted Partners</h1>
                 </div>
                 <div className="w-full flex flex-wrap min-h-[300px] rounded-lg overflow-hidden shadow-lg">
                     {/* Sidebar */}

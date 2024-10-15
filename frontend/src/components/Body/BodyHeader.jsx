@@ -12,9 +12,6 @@ function BodyHeader() {
 
     return (
 
-        
-
-        
         <div className='flex flex-col justify-center items-center mt-36 md:mb-20 mb-12 text-[#FFFFFF]'>
             <h1   ref={headingRef} className='md:text-[3.9rem] text-4xl font-medium leading-none'>
                 Welcome To {" (MTTF)"}

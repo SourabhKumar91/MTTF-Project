@@ -8,7 +8,7 @@ export const navItems = [
     {
         name: "About",
         path: "/about",
-        hoverLink:["Our Vision","Our Mission","Executive-Officers-Coordinators","Contact Us"]
+        hoverLink:["Governing-body","Advisory-committe","Coordinators",]
 
         
 

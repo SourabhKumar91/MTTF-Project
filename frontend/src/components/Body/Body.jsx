@@ -5,6 +5,8 @@ import Cordinator from '../Cordinator/Cordinator';
 import Parteners from '../Partners/Parteners';
 import EventCard from "../Events/EventCard"
 import EventSection from '../Events/EventSection';
+import OurVisionMission from '../../OurVisionMision/OurVisionMision';
+import OurVisionMision from '../../OurVisionMision/OurVisionMision';
 
 function Body() {
   return (
@@ -18,10 +20,6 @@ function Body() {
       ></div>
       <div className='flex flex-col justify-center items-center w-full '>
         <BodyHeader />
-        <ServiceSection />
-        <Cordinator/>
-        <Parteners/>
-       <EventSection/>
       </div>
     </div>
   );
