@@ -15,26 +15,26 @@ export const navItems = [
     },
     {
         name: "Membership",
-        path: "/menbership",
+        path: "/about",
         hoverLink:["Individual Membership", "Institutional Membership", "MTTF Comunity"]
 
     },
 
     {
         name: "Chepters",
-        path: "/chepters",
+        path: "/about",
         hoverLink:["About Chapter", "Students Chapter"]
 
     },
     {
         name: "Awards",
-        path: "/awards",
+        path: "/about",
         hoverLink:["Award 2025", "Award 2024"]
 
     },
     {
         name: "Events",
-        path: "/events",
+        path: "/about",
         hoverLink:[]
 
     },

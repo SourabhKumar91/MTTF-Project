@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
-import BodyHeader from '../Body/BodyHeader'
 import ServiceSection from '../ServiceSection/ServiceSection'
 import Footer from '../Footer/Footer'
 import ContactUs from '../ContactUs/ContactUs'

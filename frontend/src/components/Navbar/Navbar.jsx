@@ -3,6 +3,7 @@ import Logo from '../Logo/Logo';
 import SideBar from './sidebar';
 import { navItems } from "../../assets/navitems";
 import HoverBox from './HoverBox/HoverBox';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [togled, setTogled] = useState(false);
@@ -28,14 +29,14 @@ function Navbar() {
                         <nav className='hidden lg:flex space-x-4 font-medium'>
                             {navItems.map((item) => (
                                 <div className="relative group" key={item.name}>
-                                    <a
-                                        href={item.path}
+                                    <Link
+                                        to={item.path}
                                         className={`${
                                             item.name === 'Home' ? 'mr-0' : 'mr-2'
                                         } py-1 px-2 font-medium text-lg text-[#EEEEEE] hover:bg-[#EEEEEE] hover:text-[#03518F] hover:rounded-lg font-serif`}
                                     >
                                         {item.name}
-                                    </a>
+                                    </Link>
                                     <div className="z-20 absolute inset-x-0 bottom-0 top-12 h-1 bg-[#EEEEEE] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300">
                                         {item.hoverLink.length < 1 ? null : <HoverBox links={item.hoverLink} />}
                                     </div>
