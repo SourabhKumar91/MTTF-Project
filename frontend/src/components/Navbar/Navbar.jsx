@@ -33,7 +33,7 @@ function Navbar() {
                                         to={item.path}
                                         className={`${
                                             item.name === 'Home' ? 'mr-0' : 'mr-2'
-                                        } py-1 px-2 font-medium text-lg text-[#EEEEEE] hover:bg-[#EEEEEE] hover:text-[#03518F] hover:rounded-lg font-serif`}
+                                        } py-1 px-2 font-medium text-lg  text-[#EEEEEE] hover:bg-[#EEEEEE] hover:text-[#03518F] hover:rounded-lg font-serif`}
                                     >
                                         {item.name}
                                     </Link>

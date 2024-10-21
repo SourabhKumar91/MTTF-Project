@@ -7,7 +7,7 @@ function ContactUs() {
                 <div className="mx-auto max-w-7xl px-4 my-8  border-2 sm:px-6 lg:px-28  ">
                     <div className="">
                         <div className="mb-12  max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
-                            <h2 className="font-heading mb-4  mt-12 font-bold tracking-tight dark:text-white text-3xl sm:text-5xl font-serif">
+                            <h2 className="font-heading mb-4  mt-12 font-bold tracking-tight text-3xl sm:text-5xl font-serif">
                                 Get in Touch
                             </h2>
 

@@ -8,7 +8,7 @@ function Body({ children }) {
 
   return (
     <div className='relative flex flex-col justify-between items-center text-center md:pt-10'>
-      <div className='absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat bg-gradient-header home-banner-height'
+      <div className={`absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat bg-gradient-header  ${location.pathname === '/' ? "home-banner-height" : "" }`}
         style={{
           backgroundPosition: 'center center',
           backgroundSize: 'cover',

@@ -19,15 +19,15 @@ function About() {
 
         />
       </Body>
-      <section class="bg-gray-100">
+      <section class="bg-gray-100 ">
         <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div class="max-w-lg">
-              <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">About Us</h2>
-              <p class="mt-4 text-gray-600 text-lg">The MathTech Thinking Foundation (MTTF) is registered under Section 8 of the Companies Act 2013, Ministry of Corporate Affairs, Government of India. <br /> <br />
+              <h2 class="text-3xl text-center font-extrabold text-gray-900 sm:text-4xl">About Us</h2>
+              <p class="mt-4 text-gray-600 text-center text-lg">The MathTech Thinking Foundation (MTTF) is registered under Section 8 of the Companies Act 2013, Ministry of Corporate Affairs, Government of India. <br /> <br />
                 MTTF represents the International Scientific Association of esteemed experts in Science, Technology, Engineering, and Mathematics (STEM). Its membership includes distinguished individuals such as Research and Development Center Heads, Faculty Deans, Department Heads, Professors, Research Scientists, Engineers, Scholars, and University Postgraduate and Undergraduate Engineering and Technology Students, among others.</p>
             </div>
-            <div class="mt-12 md:mt-0">
+            <div class="mt-12 md:mt-0 ">
               <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86" alt="About Us Image" class="object-cover rounded-lg shadow-md" />
             </div>
           </div>
