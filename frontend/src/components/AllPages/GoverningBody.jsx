@@ -38,7 +38,8 @@ function GoverningBody() {
             <Navbar />
             <Body>
                 <Header
-                    imgsrc="https://th.bing.com/th/id/OIP.GqHFFk840lgx8EYgBlZ1UwHaE5?w=1920&h=1269&rs=1&pid=ImgDetMain"
+          imgsrc="https://www.egniol.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fheader.d0b31569.png&w=640&q=75"
+                    
                     title="The Governing Body"
                     description="The MathTech Thinking Foundation (referred to in short as MTTF or the Foundation) is governed by the board of directors of the foundation and the Executive Members. The board of directors includes three office-bearers of the foundation. These honourary office bearers are"
                 />
