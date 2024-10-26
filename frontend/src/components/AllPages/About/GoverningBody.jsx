@@ -1,21 +1,22 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
-import Body from '../Body/Body';
-import Header from '../../AllPagesHeaders/CommenHeader/Header';
-import Footer from '../Footer/Footer';
-import GoverningBodyCard from '../GoverningBodyCard/GoverningBodyCard';
-import meher from "../../assets/GovermentBodyImage/meher.jpg";
-import pooja from "../../assets/GovermentBodyImage/pooja.jpg";
-import jasswinder from "../../assets/GovermentBodyImage/jasswinder.jpeg";
-import shalu from "../../assets/GovermentBodyImage/shalu.jpg";
-import upinder from "../../assets/GovermentBodyImage/upinder.jpg";
-import yogita from "../../assets/GovermentBodyImage/yogita.jpg";
-import Madhuchand from "../../assets/GovermentBodyImage/Madhuchand.jpg";
-import gurmeet from "../../assets/GovermentBodyImage/gurmeet.jpg";
-import bharti from "../../assets/GovermentBodyImage/bharti.png";
-import biswaranjan from "../../assets/GovermentBodyImage/biswaranjan.jpg";
-import jatin from "../../assets/GovermentBodyImage/jatin.jpeg";
-import daljeet from "../../assets/GovermentBodyImage/daljeet.jpg";
+import Navbar from '../../Navbar/Navbar';
+import Body from '../../Body/Body';
+import Header from '../../../AllPagesHeaders/CommenHeader/Header';
+import Footer from '../../Footer/Footer';
+import GoverningBodyCard from '../../GoverningBodyCard/GoverningBodyCard';
+import meher from "../../././../assets/GovermentBodyImage/meher.jpg";
+
+import pooja from "../../././../assets/GovermentBodyImage/pooja.jpg";
+import jasswinder from "../../././../assets/GovermentBodyImage/jasswinder.jpeg";
+import shalu from "../../././../assets/GovermentBodyImage/shalu.jpg";
+import upinder from "../../././../assets/GovermentBodyImage/upinder.jpg";
+import yogita from "../../././../assets/GovermentBodyImage/yogita.jpg";
+import Madhuchand from "../../././../assets/GovermentBodyImage/Madhuchand.jpg";
+import gurmeet from "../../././../assets/GovermentBodyImage/gurmeet.jpg";
+import bharti from "../../././../assets/GovermentBodyImage/bharti.png";
+import biswaranjan from "../../././../assets/GovermentBodyImage/biswaranjan.jpg";
+import jatin from "../../././../assets/GovermentBodyImage/jatin.jpeg";
+import daljeet from "../../././../assets/GovermentBodyImage/daljeet.jpg";
 
 function GoverningBody() {
     const governingBody = [
@@ -38,8 +39,8 @@ function GoverningBody() {
             <Navbar />
             <Body>
                 <Header
-          imgsrc="https://www.egniol.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fheader.d0b31569.png&w=640&q=75"
-                    
+                    imgsrc="https://www.egniol.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fheader.d0b31569.png&w=640&q=75"
+
                     title="The Governing Body"
                     description="The MathTech Thinking Foundation (referred to in short as MTTF or the Foundation) is governed by the board of directors of the foundation and the Executive Members. The board of directors includes three office-bearers of the foundation. These honourary office bearers are"
                 />

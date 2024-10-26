@@ -8,7 +8,7 @@ const GoverningBodyCard = ({ member }) => {
                 <img
                     src={member.img}
                     alt={member.name}
-                    className="w-32 h-32 object-cover rounded-full border-4 border-white"
+                    className="w-32 h-32 object-cover object-top rounded-full border-4 border-white"
                 />
             </div>
             <h2 className="text-lg text-white font-semibold title-font mb-2">{member.name}</h2>
