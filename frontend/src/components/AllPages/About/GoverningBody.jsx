@@ -47,7 +47,7 @@ function GoverningBody() {
             </Body>
             <div className="flex flex-wrap justify-center px-4 bg-slate-300">
                 {governingBody.map((member) => (
-                    <div key={member.memberId} className="m-4 w-full sm:w-1/2 md:w-1/3">
+                    <div key={member.memberId} className=" w-[30%] mt-12">
                         <GoverningBodyCard member={member} />
                     </div>
                 ))}
