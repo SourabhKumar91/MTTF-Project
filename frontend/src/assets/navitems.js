@@ -15,7 +15,7 @@ export const navItems = [
     },
     {
         name: "Membership",
-        path: "/membership",
+        path: "/membership/individual",
         hoverLink: [
             { linkName: "Individual Membership", path: "/membership/individual" },
             { linkName: "Institutional Membership", path: "/membership/institutional" },

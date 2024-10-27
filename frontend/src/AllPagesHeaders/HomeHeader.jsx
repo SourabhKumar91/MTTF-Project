@@ -3,11 +3,12 @@ import { headingAnimation } from '../GsapAnimation/Gsap'
 import { useEffect } from 'react'
 import { useRef } from 'react'
 
-
 function HomeHeader() {
 
 
     const headingRef =  useRef()
+
+    
 
         useEffect(()=>{
             headingAnimation(headingRef)
