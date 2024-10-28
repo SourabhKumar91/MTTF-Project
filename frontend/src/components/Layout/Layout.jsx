@@ -6,6 +6,8 @@ import GoverningBody from '../AllPages/About/GoverningBody';
 import AdvisoryCommittee from '../AllPages/About/AdvisoryCommittee';
 import IndividualMembership from '../AllPages/Membership/IndividualMembership';
 import InstitutionalMembership from '../AllPages/Membership/InstitutionalMembership';
+import AboutChepter from '../AllPages/Chepters/AboutChepter';
+import StudentChepter from '../AllPages/Chepters/StudentChepter';
 
 function Layout() {
     return (
@@ -17,6 +19,8 @@ function Layout() {
                 <Route path='/about/advisorycommittee' element={ <AdvisoryCommittee/>} />
                 <Route path='/membership/individual' element={ <IndividualMembership/>} />
                 <Route path='/membership/institutional' element={ <InstitutionalMembership/>} />
+                <Route path='/chapters/about' element={<AboutChepter/>} />
+                <Route path='/chapters/students' element={<StudentChepter/>} />
                 
             </Routes>
         </>

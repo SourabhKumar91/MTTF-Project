@@ -24,7 +24,7 @@ export const navItems = [
     },
     {
         name: "Chapters",
-        path: "/chapters",
+        path: "/chapters/about",
         hoverLink: [
             { linkName: "About Chapter", path: "/chapters/about" },
             { linkName: "Students Chapter", path: "/chapters/students" }
