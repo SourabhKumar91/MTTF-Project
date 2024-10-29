@@ -1,18 +1,15 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar'
-import ServiceSection from '../ServiceSection/ServiceSection'
-import Footer from '../Footer/Footer'
-import ContactUs from '../ContactUs/ContactUs'
-import Cordinator from '../Cordinator/Cordinator'
-import OurVisionMission from '../../OurVisionMision/OurVisionMision'
-import Partners from '../Partners/Parteners'
-import Body from '../Body/Body'
+import ServiceSection from '../../components/ServiceSection/ServiceSection'
+import ContactUs from '../../components/ContactUs/ContactUs'
+import Cordinator from '../../components/Cordinator/Cordinator'
+import OurVisionMission from '../../components/OurVisionMision/OurVisionMision'
+import Partners from '../../components/Partners/Parteners'
+import Body from '../../components/Body/Body'
 
 
 function Home() {
   return (
     <>
-    <Navbar/>
     <Body/>
     <ServiceSection/>
     <OurVisionMission
@@ -26,7 +23,6 @@ function Home() {
     <Partners/>
     <Cordinator/>
     <ContactUs/>
-    <Footer/>
     
     
     </>

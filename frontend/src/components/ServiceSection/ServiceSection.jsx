@@ -67,7 +67,7 @@ function ServiceSection() {
 
 
             <div className='bg-gradient-to-r mb-10 from-blue-50 via-white to-indigo-100 p-4 pb-24 w-full min-h-[400px] flex flex-wrap justify-center bg-[#f8f9fe] '>
-                <h1 className=' font-serif  text-2xl text-center lg:text-4xl mb-8 mt-11 font-semibold'>Our Professional Services for Every Requirement</h1>
+                <h1 className=' font-serif  text-2xl text-center w-full lg:text-4xl mb-8 mt-11 font-semibold'>Our Professional Services for Every Requirement</h1>
 
                 {servicesDetail.map((service, index) => (
                     <ServicesCard

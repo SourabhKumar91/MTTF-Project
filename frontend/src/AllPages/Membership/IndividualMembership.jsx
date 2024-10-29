@@ -1,12 +1,10 @@
-
-
 import React from 'react'
-import Navbar from '../../Navbar/Navbar';
-import Body from '../../Body/Body';
-import Header from '../../../AllPagesHeaders/CommenHeader/Header';
-import Footer from '../../Footer/Footer';
-import List from '../../List/List';
-import FAQ from '../../FAQ/FAQ';
+import Body from '../../components/Body/Body';
+import Header from '../../AllPagesHeaders/CommenHeader/Header';
+import List from '../../components/List/List';
+
+import FAQ from "../../components/FAQ/FAQ"
+
 
 function IndividualMembership() {
     const benefits = [
@@ -50,7 +48,6 @@ function IndividualMembership() {
     return (
         <>
         
-            <Navbar />
             <Body>
                 <Header
                     imgsrc="https://www.egniol.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fheader.d0b31569.png&w=640&q=75"
@@ -87,6 +84,7 @@ function IndividualMembership() {
                 <List items={benefits} />
                </div>
             </section>
+
             <section class="bg-gray-100 py-12 px-6 md:px-12">
                 <div class="max-w-4xl mx-auto text-center ">
 
@@ -112,7 +110,6 @@ function IndividualMembership() {
             />
             
 
-            <Footer />
         </>
     )
 }

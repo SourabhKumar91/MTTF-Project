@@ -1,15 +1,12 @@
 import React from 'react'
-import Navbar from '../../Navbar/Navbar'
-import Body from '../../Body/Body'
-import Footer from '../../Footer/Footer'
-import Header from '../../../AllPagesHeaders/CommenHeader/Header'
+import Body from '../../components/Body/Body';
+import Header from '../../AllPagesHeaders/CommenHeader/Header';
 
 
 function About() {
   return (
     <>
 
-      <Navbar />
       <Body>
         <Header
           imgsrc="https://www.egniol.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fheader.d0b31569.png&w=640&q=75"
@@ -42,7 +39,6 @@ function About() {
           </div>
         </div>
       </section>
-      <Footer />
 
     </>
   )

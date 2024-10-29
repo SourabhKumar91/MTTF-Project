@@ -1,10 +1,8 @@
 
 import React from 'react'
-import Navbar from '../../Navbar/Navbar';
-import Body from '../../Body/Body';
-import Header from '../../../AllPagesHeaders/CommenHeader/Header';
-import Footer from '../../Footer/Footer';
-import List from '../../List/List';
+import Body from '../../components/Body/Body';
+import Header from '../../AllPagesHeaders/CommenHeader/Header';
+import List from '../../components/List/List';
 
 function AboutChepter() {
 
@@ -25,7 +23,6 @@ function AboutChepter() {
 
   return (
     <>
-      <Navbar />
       <Body>
         <Header
           imgsrc="https://www.mttf.in/wp-content/uploads/2021/06/coding-isometric-01.png"
@@ -36,7 +33,6 @@ function AboutChepter() {
 "
         />
       </Body>
-
 
       <section class="bg-gray-100 py-10 px-5 md:px-20 lg:px-40">
         <div class="max-w-4xl mx-auto text-center">
@@ -109,7 +105,6 @@ function AboutChepter() {
       </section>
 
 
-      <Footer />
     </>
   )
 }

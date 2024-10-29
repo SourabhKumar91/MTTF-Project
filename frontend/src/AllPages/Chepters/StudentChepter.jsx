@@ -1,11 +1,9 @@
 
 import React from 'react'
-import Navbar from '../../Navbar/Navbar';
-import Body from '../../Body/Body';
-import Header from '../../../AllPagesHeaders/CommenHeader/Header';
-import Footer from '../../Footer/Footer';
-import List from '../../List/List';
-import student from "../../../assets/student.png"
+import Body from '../../components/Body/Body';
+import Header from '../../AllPagesHeaders/CommenHeader/Header';
+import student from "../../assets/student.png"
+import List from '../../components/List/List';
 
 function StudentChepter() {
 
@@ -25,7 +23,7 @@ function StudentChepter() {
 
   return (
     <>
-      <Navbar />
+      
       <Body>
         <Header
           imgsrc={student}
@@ -34,11 +32,6 @@ function StudentChepter() {
           description="Student chapters for STEM professionals are established to provide a platform for students in science, technology, engineering, and mathematics (STEM) fields. These chapters aim to foster a sense of community, networking opportunities, and educational support for students pursuing careers in STEM disciplines. They often offer a range of activities, events, and resources to enhance the academic and professional development of students interested in STEM professions."
         />
       </Body>
-
-
-
-
-
 
       <section class="bg-gradient-to-r from-blue-50 to-white py-16 px-5 md:px-20 lg:px-40 w-full">
         <div class="w-full mx-auto ">
@@ -75,7 +68,6 @@ function StudentChepter() {
 
 
 
-      <Footer />
     </>
   )
 }
