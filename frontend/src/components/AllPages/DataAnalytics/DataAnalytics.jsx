@@ -23,7 +23,7 @@ function DataAnalyticsConsultancy() {
             <Navbar />
             <Body>
                 <Header
-                    imgsrc="https://example.com/data-analytics-banner.png"
+                    imgsrc="https://soothsayeranalytics.com/public/home/assets/img/data-science-image.png"
                     title="Data Analytics Consultancy Services"
                     description="Empowering businesses to unlock their full potential with data-driven strategies, analysis, and insights."
                 />
@@ -55,8 +55,8 @@ function DataAnalyticsConsultancy() {
                 </div>
                 <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pl-10">
                     <div className="relative w-full p-3 rounded md:p-8">
-                        <div className="rounded-lg bg-white text-black w-full p-6 shadow-lg">
-                            <img src="https://example.com/analytics-consultancy.jpg" alt="Data Analytics Consultancy" className="rounded-md" />
+                        <div className="rounded-lg bg-white text-black w-full p-6">
+                            <img src="https://cdn-icons-png.flaticon.com/512/4824/4824797.png" alt="Data Analytics Consultancy" className="rounded-md" />
                         </div>
                     </div>
                 </div>
