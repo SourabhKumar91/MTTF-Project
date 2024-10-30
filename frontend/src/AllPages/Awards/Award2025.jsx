@@ -71,6 +71,7 @@ import React from 'react'
 import Body from '../../components/Body/Body';
 import Header from '../../AllPagesHeaders/CommenHeader/Header';
 import { useState } from 'react';
+import awards from '../../assets/awards.png'
 
 function Award2025() {
 
@@ -119,7 +120,7 @@ function Award2025() {
         <>
             <Body>
                 <Header
-                    imgsrc="https://png.pngtree.com/png-clipart/20221216/original/pngtree-golden-medal-award-premium-badge-vector-on-transparent-background-png-image_8750546.png"
+                    imgsrc={awards}
 
                     title="IEARG Award 2025"
                     description="The Awards 2025 will be held on National Science Day, observed every year on 28 February to commemorate the discovery of the Raman effect by the esteemed Indian physicist Sir C. V. Raman on 28 February 1928. This event, in partnership with Sharda University, India, honors remarkable achievements in a variety of fields, with a total prize fund of 500,000 INR awarded across several categories."
