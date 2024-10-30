@@ -8,8 +8,8 @@ export const navItems = [
         name: "About",
         path: "/about",
         hoverLink: [
-            { linkName: "Governing-body", path: "/about/governingbody" },
             { linkName: "Advisory-committee", path: "/about/advisorycommittee" },
+            { linkName: "Governing-body", path: "/about/governingbody" },
         ]
     },
     {
