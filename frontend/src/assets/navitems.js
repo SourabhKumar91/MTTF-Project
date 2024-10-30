@@ -10,7 +10,6 @@ export const navItems = [
         hoverLink: [
             { linkName: "Governing-body", path: "/about/governingbody" },
             { linkName: "Advisory-committee", path: "/about/advisorycommittee" },
-            { linkName: "Coordinators", path: "/about/coordinators" }
         ]
     },
     {
@@ -32,7 +31,7 @@ export const navItems = [
     },
     {
         name: "Awards",
-        path: "/awards",
+        path: "/awards/2025",
         hoverLink: [
             { linkName: "Award 2025", path: "/awards/2025" },
             { linkName: "Award 2024", path: "/awards/2024" }
@@ -42,5 +41,14 @@ export const navItems = [
         name: "Events",
         path: "/events",
         hoverLink: []
-    }
+    },
+    {
+        name: "Services",
+        path: "/Services/dataanalytics",
+        hoverLink: [
+            { linkName: "Data Analytics", path: "/Services/dataanalytics" },
+            
+        ]
+    },
+    
 ];

@@ -7,7 +7,7 @@ function HoverBox({ links }) {
       <ul className="list-none p-0 m-0">
         {links.map((link, index) => (
           <li key={index} className="px-4 py-2 text-sm hover:bg-[#03518F] hover:text-white border-b border-gray-200 text-gray-800 last:border-b-0">
-            <Link to={link.path} className="no-underline text-gray-800 hover:text-white">
+            <Link to={link.path} className="no-underline  hover:text-white">
               {link.linkName}
             </Link>
           </li>
