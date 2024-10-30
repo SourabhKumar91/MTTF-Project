@@ -1,8 +1,8 @@
-
 import React from 'react'
 import Body from '../../components/Body/Body';
 import Header from '../../AllPagesHeaders/CommenHeader/Header';
 import List from '../../components/List/List';
+import studentChapter from "../../assets/studentChapter.png"
 
 function AboutChepter() {
 
@@ -25,7 +25,7 @@ function AboutChepter() {
     <>
       <Body>
         <Header
-          imgsrc="https://www.mttf.in/wp-content/uploads/2021/06/coding-isometric-01.png"
+          imgsrc={studentChapter}
 
           title="Student Chapters"
           description="Students pursuing their graduate and post graduate in Science, Technology, Engineering, & Mathematics can apply for MTTF student membership. MTTF encourages and supports students by appointing its members to provide necessary guidance to build and globalize their innovative ideas.

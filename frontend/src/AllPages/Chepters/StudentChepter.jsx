@@ -35,25 +35,18 @@ function StudentChepter() {
 
       <section class="bg-gradient-to-r from-blue-50 to-white py-16 px-5 md:px-20 lg:px-40 w-full">
         <div class="w-full mx-auto ">
-
-          {/* <!-- Text Content --> */}
           <div>
             <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-6 pb-4 border-blue-700 border-b-4">Advantages of STEM Student Chapters for Professionals</h2>
             <ul class="text-gray-700 text-md md:text-lg leading-relaxed mb-6 list-disc ml-5 space-y-4">
               <List items={professionalBenefits} textClass="text-gray-700 text-medium leading-6 md:leading-7" />
             </ul>
           </div>
-
         </div>
       </section>
       
       <section class="bg-gradient-to-r from-blue-50 to-white py-16 px-5 md:px-20 lg:px-40 w-full">
         <div class="w-full mx-auto text-center md:text-left">
-
-
           <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-6 pb-4 border-blue-700 border-b-4 inline-block">Established Chapters</h2>
-
-
           <div class="bg-white rounded-lg shadow-lg p-6 mt-6">
             <p class="text-lg md:text-xl font-semibold text-gray-800 mb-4">
               On August 12, 2023, Anand International College of Engineering in Jaipur founded the MathTech Thinking Foundation (MTTF) Student Chapter for its engineering students.
@@ -62,12 +55,8 @@ function StudentChepter() {
               <span class="font-semibold text-blue-800">Chapter ID:</span> MSC2023001
             </p>
           </div>
-
         </div>
       </section>
-
-
-
     </>
   )
 }

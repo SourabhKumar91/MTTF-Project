@@ -2,7 +2,7 @@ import React from 'react'
 import Body from '../../components/Body/Body';
 import Header from '../../AllPagesHeaders/CommenHeader/Header';
 import List from '../../components/List/List';
-
+import membership from '../../assets/membership.png'
 import FAQ from "../../components/FAQ/FAQ"
 
 
@@ -50,7 +50,7 @@ function IndividualMembership() {
         
             <Body>
                 <Header
-                    imgsrc="https://www.egniol.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fheader.d0b31569.png&w=640&q=75"
+                    imgsrc={membership}
 
                     title="Become a Member"
                     description="The lifetime membership fee for Indians is 2000 INR and for international members is 200 USD. An invoice link will be sent after registration."
