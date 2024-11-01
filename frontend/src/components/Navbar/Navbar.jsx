@@ -26,7 +26,7 @@ function Navbar() {
                     
                     {/* Middle section - Navigation */}
                     <div className='flex-1 flex justify-center items-center text-[#FFFFFF]'>
-                        <nav className='hidden lg:flex space-x-4 font-medium'>
+                        <nav className='hidden xl:flex space-x-4 font-medium'>
                             {navItems.map((item) => (
                                 <div className="relative group" key={item.name}>
                                     <Link
@@ -46,8 +46,8 @@ function Navbar() {
                     </div>
 
                     {/* Right section - Member Login */}
-                    <div className='hidden lg:flex items-center'>
-                        <a href="#" className='flex-shrink-0'>
+                    <div className='hidden xl:flex items-center'>
+                        <a href="https://www.mttf.in/member-login/" className='flex-shrink-0'>
                             <button className="inline-flex font-serif text-lg text-[#EEEEEE] items-center bg-[#03518F] border-0 py-2 px-3 lg:px-4 focus:outline-none hover:bg-[#EEEEEE]  hover:text-[#03518F] rounded-full mt-2 md:mt-0">
                                 Member Login
                                 <svg
@@ -68,7 +68,7 @@ function Navbar() {
                     </div>
 
                     {/* Mobile menu button */}
-                    <div className='lg:hidden text-right py-1 navmenubar items-center justify-center'>
+                    <div className='xl:hidden text-right py-1 navmenubar items-center justify-center'>
                         <button onClick={handelClick} className='  text-white'>
                             <i className="fa-solid fa-bars w-10 h-8 mt-1" style={{ fontSize: '1.5rem' }}></i>
                         </button>

@@ -44,9 +44,11 @@ function AboutChepter() {
             To establish a student chapter, the hosting institute, university, or college must submit a petition to our head office. This initiative aims to promote education and research in STEM fields by offering students a platform to share ideas and enthusiasm with fellow students and faculty from any relevant department on campus.
           </p>
           <p class="text-gray-700 text-md md:text-lg font-semibold">Science, Technology, Engineering, & Mathematics</p>
-          <button class="mt-8 px-8 py-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-offset-2 transform transition-transform duration-300 hover:scale-105">
-            Contact Us
-          </button>
+          <a href="https://api.whatsapp.com/send/?phone=918968294003&text&type=phone_number&app_absent=0" target='blank'>
+            <button class="mt-8 px-8 py-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-offset-2 transform transition-transform duration-300 hover:scale-105">
+              Contact Us
+            </button>
+          </a>
         </div>
       </section>
 
@@ -71,9 +73,11 @@ function AboutChepter() {
               Feel free to contact us regarding the student chapter at
               <a href="mailto:contactus@mttf.in" class="text-blue-600 underline hover:text-blue-800">contactus@mttf.in</a>
             </p>
-            <button class="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2">
-              Contact Us
-            </button>
+            <a href="https://api.whatsapp.com/send/?phone=918968294003&text&type=phone_number&app_absent=0" target='blank'>
+              <button class="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2">
+                Contact Us
+              </button>
+            </a>
           </div>
 
           {/* <!-- Image --> */}

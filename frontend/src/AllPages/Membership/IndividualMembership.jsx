@@ -24,9 +24,8 @@ function IndividualMembership() {
         {
             question: "How to register for Lifetime Membership?",
             answer:  (
-                <p>
-                    First click on become a member icon, fill in the required and authentic details in the registration form and submit it. After submition, you will receive an email to activate your account. After successful activation of your account, you will get your Member ID on your email address. <br /> <br />Further, registered members can join at most three MTTF-Societies of your interest. To join these societies, you need to log in your account, then go to MTTF-Societies and submit the details.
-                </p>
+                
+                "First click on become a member icon, fill in the required and authentic details in the registration form and submit it. After submition, you will receive an email to activate your account. After successful activation of your account, you will get your Member ID on your email address. <br /> <br />Further, registered members can join at most three MTTF-Societies of your interest. To join these societies, you need to log in your account, then go to MTTF-Societies and submit the details."
 
             )
         },
@@ -47,7 +46,6 @@ function IndividualMembership() {
     
     return (
         <>
-        
             <Body>
                 <Header
                     imgsrc={membership}
@@ -56,21 +54,19 @@ function IndividualMembership() {
                     description="The lifetime membership fee for Indians is 2000 INR and for international members is 200 USD. An invoice link will be sent after registration."
 
                     button="BECOME A MEMBER"
+                    buttonLink = 'https://www.mttf.in/become-a-member/'
                 />
             </Body>
-            <section class="text-gray-600 body-font">
-                <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                        <h1 class="title-font sm:text-4xl text-3xl mb-5 font-medium text-gray-900">Why should you join us?
-                            <br class="hidden lg:inline-block" />
+            <section className="text-gray-600 body-font">
+                <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                        <h1 className="title-font sm:text-4xl text-3xl mb-5 font-medium text-gray-900">Why should you join us?
+                            <br className="hidden lg:inline-block" />
                         </h1>
-                        <p class="mb-8 lg:text-xl   font-sans  font-medium leading-10  ">MTTF invites all professionals in Science, Technology, Engineering, and Mathematics to join our community. MTTF Societies encompass fields like engineering, mathematics, science, and computer science, organizing key events such as conferences, workshops, training, internships, and faculty development programs. These gatherings create valuable opportunities for networking, knowledge-sharing, and collaborative problem-solving. MTTF Society committee members also play an active role in planning and organizing activities, contributing to a vibrant professional community.</p>
-                        <div class="flex justify-center">
-                            <button class="ml-8 inline-flex text-xl  text-blue-600 font-medium py-2 px-6 focus:outline-none bg-gray-200 rounded ">Learn More...</button>
-                        </div>
+                        <p className="mb-8 lg:text-xl   font-sans  font-medium leading-10  ">MTTF invites all professionals in Science, Technology, Engineering, and Mathematics to join our community. MTTF Societies encompass fields like engineering, mathematics, science, and computer science, organizing key events such as conferences, workshops, training, internships, and faculty development programs. These gatherings create valuable opportunities for networking, knowledge-sharing, and collaborative problem-solving. MTTF Society committee members also play an active role in planning and organizing activities, contributing to a vibrant professional community.</p>
                     </div>
-                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        <img class="object-cover object-center rounded  shadow-[#00000062] shadow-xl" alt="hero" src="https://www.mttf.in/wp-content/uploads/2023/04/316000397_5653660711354580_5399085255215049303_n.jpg" />
+                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                        <img className="object-cover object-center rounded  shadow-[#00000062] shadow-xl" alt="hero" src="https://www.mttf.in/wp-content/uploads/2023/04/316000397_5653660711354580_5399085255215049303_n.jpg" />
                     </div>
                 </div>
             </section>
@@ -85,31 +81,28 @@ function IndividualMembership() {
                </div>
             </section>
 
-            <section class="bg-gray-100 py-12 px-6 md:px-12">
-                <div class="max-w-4xl mx-auto text-center ">
+            <section className="bg-gray-100 py-12 px-6 md:px-12">
+                <div className="max-w-4xl mx-auto text-center ">
 
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4 ">Lifetime Membership Fee</h2>
+                    <h2 className="text-3xl font-bold text-gray-800 mb-4 ">Lifetime Membership Fee</h2>
 
 
-                    <p class="text-gray-600 mb-8">
+                    <p className="text-gray-600 mb-8">
                         New Members, who registered on 1/1/2022 onwards have to pay their membership fee within the current month after registration. After fee confirmation, a membership certificate will be sent through a registered email address. The lifetime membership fee for Indians is 2000 INR and for international members is 200 USD. Interested candidates from most underdeveloped countries i.e. ERITREA, GUINEA, MADAGASCAR, NIGERIA, ETHIOPIA, MALAWI, SIERRA LEONE, LIBERIA, CONGO, BURUNDI need to pay only 100 USD. An invoice link will be sent after registration.
                     </p>
 
 
-                    <div class="flex justify-center gap-8">
-                        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+                    <div className="flex justify-center gap-8">
+                        <a className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition" href='https://payments.cashfree.com/forms/Indianlifetimemember'>
                             ₹2000 for India
-                        </button>
-                        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+                        </a>
+                        <a className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition" href='https://paypal.me/mttf2020?country.x=IN&locale.x=en_GB'>
                             $ 200 for International
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>
-            <FAQ faqs={faqs}
-            />
-            
-
+            <FAQ faqs={faqs}/>
         </>
     )
 }
