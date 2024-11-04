@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header({ title, description, imgsrc, button }) {
     return (
-        <div className='flex  flex-col md:flex-row justify-center items-center gap-10 mt-36 md:mb-20 mb-12  text-[#FFFFFF]'>
+        <div className='flex   flex-col md:flex-row justify-center items-center gap-10 mt-36 md:mb-20 mb-12  text-[#FFFFFF]'>
             {/* Text Section */}
             <div className='flex-1 md:text-left  text-center px-6  '>
                 <h1 className='md:text-[3.9rem] text-4xl font-medium leading-none text-center '>

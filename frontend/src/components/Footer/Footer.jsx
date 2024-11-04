@@ -12,7 +12,7 @@ function Footer() {
             <footer className="text-gray-300 body-font bg-gradient-to-r from-[#283853] to-gray-900 border-t-4 overflow-x-hidden">
                 <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                     <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-                        
+
                         {/* Our Company Links */}
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
                             <h2 className="title-font font-semibold text-xl text-white tracking-widest mb-4">Our Company</h2>
@@ -24,7 +24,7 @@ function Footer() {
                                 ))}
                             </nav>
                         </div>
-                        
+
                         {/* Services Links */}
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
                             <h2 className="title-font font-semibold text-xl text-white tracking-widest mb-4">Services</h2>

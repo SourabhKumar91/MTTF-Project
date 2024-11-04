@@ -52,3 +52,24 @@ export const navItems = [
     },
     
 ];
+
+
+// export default navItems =[
+//            {
+//                 name: "Link1...",
+//                 path: "/link1",
+//             },
+//             {
+//                 name: "Link2...",
+//                 path: "/link2",
+//             },
+//             {
+//                 name: "Link3...",
+//                 path: "/link3",
+//             },
+//             {
+//                 name: "Link4...",
+//                 path: "/link",
+//             },
+
+// ]
