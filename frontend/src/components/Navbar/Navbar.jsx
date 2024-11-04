@@ -7,10 +7,9 @@ import PopupBox from './PopupBox/PopupBox';
 function Navbar() {
     const [togled, setTogled] = useState(false);
     const [show, setShow] = useState({
-        box1: false,
-        box2: false,
-        box3: false,
-        box4: false,
+        whatWeDo: false,
+        whatWeThink: false,
+        whatWeAre: false,
     });
 
     const whatWeDo = [
@@ -97,22 +96,7 @@ function Navbar() {
 
             ]
         },
-        {
-            heading: "Event's Awards",
-            links: [
-                
-                {
-                    linkName: "Awards 2025",
-                    path: "/awards/2025"
-                },
-                {
-                    linkName: "Awards 2024",
-                    path: "/awards/2024"
-                },
-               
-
-            ]
-        },
+        
         {
             heading: "Chepters",
             links: [
@@ -129,6 +113,22 @@ function Navbar() {
 
             ]
         },
+        {
+            heading: "Event's Awards",
+            links: [
+                
+                {
+                    linkName: "Awards 2025",
+                    path: "/awards/2025"
+                },
+                {
+                    linkName: "Awards 2024",
+                    path: "/awards/2024"
+                },
+               
+
+            ]
+        },
     ]
     
    
@@ -137,11 +137,11 @@ function Navbar() {
         setTogled(prev => !prev);
     };
 
-    const handleBtnClick = (box) => {
+    const handleBtnClick = (name) => {
         setShow({
-            box1: box === "box1",
-            box2: box === "box2",
-            box3: box === "box3",
+            whatWeDo: name === "whatWeDo",
+            whatWeThink: false,
+            whatWeAre: name === "whatWeAre",
         });
     };
 
@@ -161,9 +161,9 @@ function Navbar() {
                     {/* Middle section - Navigation */}
                     <div className="flex-1 flex justify-center items-center text-[#FFFFFF]">
                         <nav className="hidden lg:flex space-x-4 font-medium">
-                            <button className="border-none px-6" onClick={() => handleBtnClick("box1")}>What We do </button>
-                            <Link to="/"><button className="border-none px-6" onClick={() => handleBtnClick("box2")}>What We Think</button></Link>
-                            <button className="border-none px-6" onClick={() => handleBtnClick("box3")}>Who We Are</button>
+                            <button className="border-none px-6" onClick={() => handleBtnClick("whatWeDo")}>What We do </button>
+                            <Link to="/"><button className="border-none px-6" onClick={() => handleBtnClick("whatWeThink")}>What We Think</button></Link>
+                            <button className="border-none px-6" onClick={() => handleBtnClick("whatWeAre")}>Who We Are</button>
                         </nav>
                     </div>
 
@@ -198,13 +198,13 @@ function Navbar() {
                 </div>
 
                 {/* Conditional rendering for each box */}
-                {show.box1 && (
+                {show.whatWeDo && (
                    <PopupBox linkBox={whatWeDo} closeIcon={setShow}/>
                 )}
                 
                 {/* we donot need  box 2 bcz that does not has links's list */}
 
-                {show.box3 && (
+                {show.whatWeAre && (
                      <PopupBox linkBox={whatWeAre} closeIcon={setShow}/>
                 )}
 
