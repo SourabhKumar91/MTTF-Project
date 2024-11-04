@@ -1,9 +1,8 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';  // Import useLocation
+import { useLocation } from 'react-router-dom';
 import HomeHeader from "../../AllPagesHeaders/HomeHeader";
 
 function Body({ children }) {
-  // Get the current location
   const location = useLocation();
 
   return (
@@ -17,10 +16,8 @@ function Body({ children }) {
       ></div>
       
       <div className='flex flex-col justify-center items-center w-full '>
-        {/* Conditionally render HomeHeader only on the "/" route */}
         {location.pathname === '/' && <HomeHeader />}
         
-        {/* Render children passed to this component */}
         {children}
       </div>
     </div>

@@ -36,13 +36,13 @@ function DataAnalyticsConsultancy() {
                         </p>
                         <div className="mt-5 sm:flex md:mt-8">
                             <div className="rounded-md shadow">
-                                <a href="/services"
+                                <a href="#"
                                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-500 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10">
                                     Get Started
                                 </a>
                             </div>
                             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                                <a href="/contact"
+                                <a href="https://api.whatsapp.com/send/?phone=918968294003&text&type=phone_number&app_absent=0" target='blank'
                                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-blue-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md hover:text-blue-600 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10">
                                     Contact Us
                                 </a>

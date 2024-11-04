@@ -8,8 +8,9 @@ export const navItems = [
         name: "About",
         path: "/about",
         hoverLink: [
-            { linkName: "Governing-body", path: "/about/governingbody" },
+            { linkName: "About", path: "/about" },
             { linkName: "Advisory-committee", path: "/about/advisorycommittee" },
+            { linkName: "Governing-body", path: "/about/governingbody" },
         ]
     },
     {
@@ -18,7 +19,6 @@ export const navItems = [
         hoverLink: [
             { linkName: "Individual Membership", path: "/membership/individual" },
             { linkName: "Institutional Membership", path: "/membership/institutional" },
-            { linkName: "MTTF Community", path: "/membership/community" }
         ]
     },
     {
@@ -39,7 +39,7 @@ export const navItems = [
     },
     {
         name: "Events",
-        path: "/events",
+        path: "https://www.mttf.in/events-2/",
         hoverLink: []
     },
     {
