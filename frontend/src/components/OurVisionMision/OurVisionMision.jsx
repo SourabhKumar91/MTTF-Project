@@ -4,7 +4,7 @@ function OurVisionMission({ image, heading1, description1, heading2, description
   return (
     <>
       {/* Vision/Mission Section */}
-      <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+      <div id='vision' className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={image} // Pass the image dynamically

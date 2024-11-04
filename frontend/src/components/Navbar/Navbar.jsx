@@ -2,22 +2,136 @@ import React, { useState } from 'react';
 import Logo from '../Logo/Logo';
 import SideBar from './sidebar';
 import { Link } from 'react-router-dom';
+import PopupBox from './PopupBox/PopupBox';
 
 function Navbar() {
     const [togled, setTogled] = useState(false);
-
-    // Placeholder arrays for links
-    const ourCompanyLink = ["Placeholder 1", "Placeholder 2", "Placeholder 3", "Placeholder 4", "Placeholder 5", "Placeholder 6"];
-    const servicesLink = ["Placeholder 1", "Placeholder 2", "Placeholder 3", "Placeholder 4"];
-    const importantLink = ["Placeholder 1", "Placeholder 2"];
-    const contact = ["Placeholder Email", "Placeholder Phone"];
-
     const [show, setShow] = useState({
         box1: false,
         box2: false,
         box3: false,
         box4: false,
     });
+
+    const whatWeDo = [
+        {
+            heading: "Industry",
+            links: [
+                {
+                    linkName: "supply chain",
+                    path: ""
+                },
+                {
+                    linkName: "Banking",
+                    path: ""
+                },
+                {
+                    linkName: "Netural Resourse",
+                    path: ""
+                },
+                {
+                    linkName: "Health",
+                    path: ""
+                },
+                {
+                    linkName: "High Tech",
+                    path: ""
+                },
+                {
+                    linkName: "Life Science",
+                    path: ""
+                },
+                {
+                    linkName: "Software & Platform",
+                    path: ""
+                },
+            ]
+        },
+        {
+            heading: "Capability",
+            links: [
+                {
+                    linkName: "Data Analytics",
+                    path: "/Services/dataanalytics"
+                }
+            ]
+        },
+        {
+            heading: "Membership",
+            links: [
+                {
+                    linkName: "Individual Membership",
+                    path: "/membership/individual"
+                },
+                {
+                    linkName: "Institutional Membership",
+                    path: "/membership/institutional"
+                },
+            ]
+        },
+
+    ]
+
+    const whatWeAre = [
+        {
+            heading: "General Information",
+            links: [
+                {
+                    linkName: "Home",
+                    path: "/"
+                },
+                {
+                    linkName: "About",
+                    path: "/about"
+                },
+                {
+                    linkName: "Governing Body",
+                    path: "/about/governingbody"
+                },
+                {
+                    linkName: "Advisory Committee",
+                    path: "/about/advisorycommittee"
+                },
+                
+               
+
+            ]
+        },
+        {
+            heading: "Event's Awards",
+            links: [
+                
+                {
+                    linkName: "Awards 2025",
+                    path: "/awards/2025"
+                },
+                {
+                    linkName: "Awards 2024",
+                    path: "/awards/2024"
+                },
+               
+
+            ]
+        },
+        {
+            heading: "Chepters",
+            links: [
+                
+                {
+                    linkName: "Student Chepter",
+                    path: "/chapters/students"
+                },
+                {
+                    linkName: "About Chepter",
+                    path: "/chapters/about"
+                },
+               
+
+            ]
+        },
+    ]
+    
+   
 
     const handelClick = () => {
         setTogled(prev => !prev);
@@ -28,10 +142,9 @@ function Navbar() {
             box1: box === "box1",
             box2: box === "box2",
             box3: box === "box3",
-            box4: box === "box4",
         });
     };
-    
+
 
     return (
         <>
@@ -48,10 +161,9 @@ function Navbar() {
                     {/* Middle section - Navigation */}
                     <div className="flex-1 flex justify-center items-center text-[#FFFFFF]">
                         <nav className="hidden lg:flex space-x-4 font-medium">
-                            <button className="border-none px-6" onClick={() => handleBtnClick("box1")}>Link1...</button>
-                            <button className="border-none px-6" onClick={() => handleBtnClick("box2")}>Link2...</button>
-                            <button className="border-none px-6" onClick={() => handleBtnClick("box3")}>Link3...</button>
-                            <button className="border-none px-6" onClick={() => handleBtnClick("box4")}>Link4...</button>
+                            <button className="border-none px-6" onClick={() => handleBtnClick("box1")}>What We do </button>
+                            <Link to="/"><button className="border-none px-6" onClick={() => handleBtnClick("box2")}>What We Think</button></Link>
+                            <button className="border-none px-6" onClick={() => handleBtnClick("box3")}>Who We Are</button>
                         </nav>
                     </div>
 
@@ -87,88 +199,15 @@ function Navbar() {
 
                 {/* Conditional rendering for each box */}
                 {show.box1 && (
-                   <div className="absolute w-full h-screen top-24 shadow-lg border-t-2 border-white">
-                   <div className="bg-gradient-to-r from-[#0c0c0e] to-[#342e69] w-full h-full relative">
-                       {/* Close Icon */}
-                       <button
-                           className="absolute top-4 right-6 text-white text-[50px] font-bold hover:text-gray-300 transition duration-200"
-                           onClick={() => setShow({ box1: false, box2: false, box3: false, box4: false })}
-                       >
-                           &times;
-                       </button>
-               
-                       <div className="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-                           <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-               
-                               {/* Our Company Links */}
-                               <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                                   <h2 className="title-font font-semibold text-2xl text-white tracking-widest mb-4">Heading...</h2>
-                                   <nav className="list-none mb-10">
-                                       {ourCompanyLink.map((link, index) => (
-                                           <li key={index} className="mt-3">
-                                               <a className="text-white  hover:text-blue-300 transition duration-300 cursor-pointer">{link}</a>
-                                           </li>
-                                       ))}
-                                   </nav>
-                               </div>
-               
-                               {/* Services Links */}
-                               <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                                   <h2 className="title-font font-semibold text-2xl text-white tracking-widest mb-4">Heading...</h2>
-                                   <nav className="list-none mb-10">
-                                       {servicesLink.map((link, index) => (
-                                           <li key={index} className="mt-3">
-                                               <a className="text-white  hover:text-blue-300 transition duration-300 cursor-pointer">{link}</a>
-                                           </li>
-                                       ))}
-                                   </nav>
-                               </div>
-               
-                               {/* Important Links */}
-                               <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                                   <h2 className="title-font font-semibold text-2xl text-white tracking-widest mb-4"> Heading...</h2>
-                                   <nav className="list-none mb-10">
-                                       {importantLink.map((link, index) => (
-                                           <li key={index} className="mt-3">
-                                               <a className="text-white  hover:text-blue-300 transition duration-300 cursor-pointer">{link}</a>
-                                           </li>
-                                       ))}
-                                   </nav>
-                               </div>
-               
-                               {/* Contact Us */}
-                               <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                                   <h2 className="title-font font-semibold text-2xl text-white tracking-widest mb-4">Heading...</h2>
-                                   <nav className="list-none mb-10">
-                                       {contact.map((link, index) => (
-                                           <li key={index} className="mt-3">
-                                               <a className="text-white  hover:text-blue-300 transition duration-300 cursor-pointer">{link}</a>
-                                           </li>
-                                       ))}
-                                   </nav>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               
+                   <PopupBox linkBox={whatWeDo} closeIcon={setShow}/>
+                )}
+                
+                {/* we donot need  box 2 bcz that does not has links's list */}
 
-                )}
-                {show.box2 && (
-                    <div className="absolute w-full h-screen top-24 bg-white py-4 shadow-md">
-                        <p className="text-center text-gray-700">Content for Box 2</p>
-                    </div>
-                )}
                 {show.box3 && (
-                    <div className="absolute w-full h-screen top-24 bg-white py-4 shadow-md">
-                        <p className="text-center text-gray-700">Content for Box 3</p>
-                    </div>
+                     <PopupBox linkBox={whatWeAre} closeIcon={setShow}/>
                 )}
-                {show.box4 && (
-                    <div className="absolute w-full h-screen top-24 bg-white py-4 shadow-md">
-                        <p className="text-center text-gray-700">Content for Box 4</p>
-                    </div>
-                )}
+
             </header>
         </>
     );
