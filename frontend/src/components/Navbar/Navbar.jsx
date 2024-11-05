@@ -3,136 +3,16 @@ import Logo from '../Logo/Logo';
 import SideBar from './sidebar';
 import { Link } from 'react-router-dom';
 import PopupBox from './PopupBox/PopupBox';
+import navItems from '../../assets/navitems'
 
 function Navbar() {
     const [togled, setTogled] = useState(false);
     const [show, setShow] = useState({
         whatWeDo: false,
         whatWeThink: false,
-        whatWeAre: false,
+        whoWeAre: false,
     });
-
-    const whatWeDo = [
-        {
-            heading: "Industry",
-            links: [
-                {
-                    linkName: "supply chain",
-                    path: ""
-                },
-                {
-                    linkName: "Banking",
-                    path: ""
-                },
-                {
-                    linkName: "Netural Resourse",
-                    path: ""
-                },
-                {
-                    linkName: "Health",
-                    path: ""
-                },
-                {
-                    linkName: "High Tech",
-                    path: ""
-                },
-                {
-                    linkName: "Life Science",
-                    path: ""
-                },
-                {
-                    linkName: "Software & Platform",
-                    path: ""
-                },
-            ]
-        },
-        {
-            heading: "Capability",
-            links: [
-                {
-                    linkName: "Data Analytics",
-                    path: "/Services/dataanalytics"
-                }
-            ]
-        },
-        {
-            heading: "Membership",
-            links: [
-                {
-                    linkName: "Individual Membership",
-                    path: "/membership/individual"
-                },
-                {
-                    linkName: "Institutional Membership",
-                    path: "/membership/institutional"
-                },
-            ]
-        },
-
-    ]
-
-    const whatWeAre = [
-        {
-            heading: "General Information",
-            links: [
-                {
-                    linkName: "Home",
-                    path: "/"
-                },
-                {
-                    linkName: "About",
-                    path: "/about"
-                },
-                {
-                    linkName: "Governing Body",
-                    path: "/about/governingbody"
-                },
-                {
-                    linkName: "Advisory Committee",
-                    path: "/about/advisorycommittee"
-                },
-                
-               
-
-            ]
-        },
-        
-        {
-            heading: "Chepters",
-            links: [
-                
-                {
-                    linkName: "Student Chepter",
-                    path: "/chapters/students"
-                },
-                {
-                    linkName: "About Chepter",
-                    path: "/chapters/about"
-                },
-               
-
-            ]
-        },
-        {
-            heading: "Event's Awards",
-            links: [
-                
-                {
-                    linkName: "Awards 2025",
-                    path: "/awards/2025"
-                },
-                {
-                    linkName: "Awards 2024",
-                    path: "/awards/2024"
-                },
-               
-
-            ]
-        },
-    ]
     
-   
-
     const handelClick = () => {
         setTogled(prev => !prev);
     };
@@ -141,14 +21,14 @@ function Navbar() {
         setShow({
             whatWeDo: name === "whatWeDo",
             whatWeThink: false,
-            whatWeAre: name === "whatWeAre",
+            whoWeAre: name === "whoWeAre",
         });
     };
 
 
     return (
         <>
-            <SideBar togled={togled} setTogled={setTogled} />
+            <SideBar togled={togled} setTogled={setTogled} navItems={navItems} />
             <header className="absolute flex justify-center items-center w-full z-30 text-m xl:text-xl">
                 <div className="mx-4 rounded-full px-3 md:py-4 py-1 flex items-center justify-between w-full lg:w-10/12 bg-[#ffffff10]"
                     style={{ border: "1px solid rgba(255, 255, 255, 0.2)" }}>
@@ -163,7 +43,7 @@ function Navbar() {
                         <nav className="hidden lg:flex space-x-4 font-medium">
                             <button className="border-none px-6" onClick={() => handleBtnClick("whatWeDo")}>What We do </button>
                             <Link to="/"><button className="border-none px-6" onClick={() => handleBtnClick("whatWeThink")}>What We Think</button></Link>
-                            <button className="border-none px-6" onClick={() => handleBtnClick("whatWeAre")}>Who We Are</button>
+                            <button className="border-none px-6" onClick={() => handleBtnClick("whoWeAre")}>Who We Are</button>
                         </nav>
                     </div>
 
@@ -199,13 +79,13 @@ function Navbar() {
 
                 {/* Conditional rendering for each box */}
                 {show.whatWeDo && (
-                   <PopupBox linkBox={whatWeDo} closeIcon={setShow}/>
+                   <PopupBox linkBox={navItems.whatWeDo} closeIcon={setShow}/>
                 )}
                 
                 {/* we donot need  box 2 bcz that does not has links's list */}
 
-                {show.whatWeAre && (
-                     <PopupBox linkBox={whatWeAre} closeIcon={setShow}/>
+                {show.whoWeAre && (
+                     <PopupBox linkBox={navItems.whoWeAre} closeIcon={setShow}/>
                 )}
 
             </header>
