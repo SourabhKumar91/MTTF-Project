@@ -4,6 +4,11 @@ import Body from '../../components/Body/Body';
 import Header from '../../AllPagesHeaders/CommenHeader/Header';
 import award2024 from "../../assets/2024awards/EARG2024.jpg"
 import awardTop from "../../assets/2024awards/awardTop.png"
+import img1 from "../../assets/2024 IEARG/IMG1.jpg"
+import img2 from "../../assets/2024 IEARG/IMG2.jpg"
+import img3 from "../../assets/2024 IEARG/IMG3.jpg"
+import img4 from "../../assets/2024 IEARG/IMG4.jpg"
+import img5 from "../../assets/2024 IEARG/IMG5.jpg"
 function Award2024() {
 
 
@@ -28,15 +33,12 @@ function Award2024() {
         <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">Gallery</h2>
 
         {/* <!-- Images Grid --> */}
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 ">
-          {/* <!-- Seven image placeholders --> */}
-          <img src="image1.jpg" alt="Image 1" class="w-full h-40 object-cover rounded-md shadow-md" />
-          <img src="image2.jpg" alt="Image 2" class="w-full h-40 object-cover rounded-md shadow-md" />
-          <img src="image3.jpg" alt="Image 3" class="w-full h-40 object-cover rounded-md shadow-md" />
-          <img src="image4.jpg" alt="Image 4" class="w-full h-40 object-cover rounded-md shadow-md" />
-          <img src="image5.jpg" alt="Image 5" class="w-full h-40 object-cover rounded-md shadow-md" />
-          <img src="image6.jpg" alt="Image 6" class="w-full h-40 object-cover rounded-md shadow-md" />
-          <img src="image7.jpg" alt="Image 7" class="w-full h-40 object-cover rounded-md shadow-md" />
+        <div class="grid grid-cols-2  gap-4 mb-8  ">
+          <img src={img2} alt="Image 2" class="w-full h-full object-cover p-8 rounded-md shadow-md" />
+          <img src={img3} alt="Image 3" class="w-full h-full object-cover p-8 rounded-md shadow-md" />
+          <img src={img4} alt="Image 4" class="w-full h-full object-cover p-8 rounded-md shadow-md" />
+          <img src={img5} alt="Image 5" class="w-full h-full object-cover p-8 rounded-md shadow-md" />
+          <img src={img1} alt="Image 1" class="w-full h-full object-cover p-8 rounded-md shadow-md" />
         </div>
 
         {/* <!-- Videos Grid --> */}
