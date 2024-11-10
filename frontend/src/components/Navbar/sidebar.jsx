@@ -28,7 +28,7 @@ const SideBar = React.memo(({ togled, setTogled, navItems }) => {
     useGSAP(() => {
         tl.current.to(sideMenuRef.current, {
             left: 0,
-            duration: 0.5,
+            duration: 0.3,
         });
 
         if (togled) {

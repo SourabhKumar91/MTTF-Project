@@ -33,12 +33,12 @@ function Award2024() {
         <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">Gallery</h2>
 
         {/* <!-- Images Grid --> */}
-        <div class="grid grid-cols-2  gap-4 mb-8  ">
-          <img src={img2} alt="Image 2" class="w-full h-full object-cover p-8 rounded-md shadow-md" />
-          <img src={img3} alt="Image 3" class="w-full h-full object-cover p-8 rounded-md shadow-md" />
-          <img src={img4} alt="Image 4" class="w-full h-full object-cover p-8 rounded-md shadow-md" />
-          <img src={img5} alt="Image 5" class="w-full h-full object-cover p-8 rounded-md shadow-md" />
-          <img src={img1} alt="Image 1" class="w-full h-full object-cover p-8 rounded-md shadow-md" />
+        <div class="grid  grid-cols-1 md:grid-cols-2  gap-4 mb-8  ">
+          <img src={img2} alt="Image 2" class="w-full h-full object-cover md:p-8 rounded-md shadow-md" />
+          <img src={img3} alt="Image 3" class="w-full h-full object-cover md:p-8 rounded-md shadow-md" />
+          <img src={img4} alt="Image 4" class="w-full h-full object-cover md:p-8 rounded-md shadow-md" />
+          <img src={img5} alt="Image 5" class="w-full h-full object-cover md:p-8 rounded-md shadow-md" />
+          <img src={img1} alt="Image 1" class="w-full h-full object-cover md:p-8 rounded-md shadow-md" />
         </div>
 
         {/* <!-- Videos Grid --> */}

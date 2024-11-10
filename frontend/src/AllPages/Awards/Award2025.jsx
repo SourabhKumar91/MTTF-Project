@@ -72,7 +72,7 @@ function Award2025() {
                     />
                 </div>
                 <div className="  w-full lg:w-[80%] lg:mx-auto">
-                    <div className="flex justify-evenly items-center gap-4 mb-8 ">
+                    <div className="flex justify-evenly flex-wrap items-center gap-4 mb-8 ">
                         {buttons.map((btnname) => (
                             <button
                                 key={btnname}
