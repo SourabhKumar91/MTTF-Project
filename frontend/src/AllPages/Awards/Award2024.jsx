@@ -35,31 +35,31 @@ function Award2024() {
           <img src={img1} alt="Image 1" className="w-full h-full object-cover md:p-8 rounded-md shadow-md" />
         </div>
 
-        {/* Videos Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="flex justify-center items-center mt-6">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/watch?v=hky36VUXAUc&t=237s"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-          <div className="flex justify-center items-center mt-6">
-            <iframe
-              width="560"
-              height="315"
-              src="https://youtu.be/hky36VUXAUc"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
+  <div className="flex justify-center items-center mt-6">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/hky36VUXAUc?controls=1&modestbranding=1&rel=0"
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+  <div className="flex justify-center items-center mt-6">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/EeuSbtK8XsE?controls=1&modestbranding=1&rel=0"
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
+
       </section>
     </>
   );
