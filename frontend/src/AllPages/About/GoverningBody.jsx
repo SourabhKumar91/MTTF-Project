@@ -14,6 +14,7 @@ import bharti from "../../assets/GovermentBodyImage/bharti.png";
 import biswaranjan from "../../assets/GovermentBodyImage/biswaranjan.jpg";
 import jatin from "../../assets/GovermentBodyImage/jatin.jpeg";
 import daljeet from "../../assets/GovermentBodyImage/daljeet.jpg";
+import AdvisoryCommittee from './AdvisoryCommittee';
 
 function GoverningBody() {
     const governingBody = [
@@ -37,17 +38,34 @@ function GoverningBody() {
                 <Header
                     imgsrc="https://www.egniol.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fheader.d0b31569.png&w=640&q=75"
 
-                    title="The Governing Body"
-                    description="The MathTech Thinking Foundation (referred to in short as MTTF or the Foundation) is governed by the board of directors of the foundation and the Executive Members. The board of directors includes three office-bearers of the foundation. These honourary office bearers are"
+                    title="Our Visionary Leaders"
+                    description="Meet the dedicated leaders of the MathTech Thinking Foundation (MTTF), whose passion, expertise, and commitment drive our mission forward. Our team of esteemed scholars, educators, and industry professionals brings together a wealth of knowledge and experience to inspire innovative solutions and educational advancements. Through their guidance, MTTF continues to empower individuals, foster academic growth, and promote technological excellence. Discover the visionaries who shape our foundation and contribute to a brighter, more inclusive future in mathematics and technology"
                 />
             </Body>
-            <div className="flex flex-wrap justify-center px-4 bg-slate-300">
-                {governingBody.map((member) => (
-                    <div key={member.memberId} className=" w-[30%] mt-12">
-                        <GoverningBodyCard member={member} />
-                    </div>
-                ))}
+
+            {/* governingBody.................. */}
+            <div className="flex flex-col bg-slate-300 p-8 pt-24">
+                <div className="text-center mb-6">
+                    <h1 className="text-4xl font-bold text-gray-800 mb-2">
+                        The Governing Body
+                    </h1>
+                    <p className="text-lg text-gray-700 max-w-4xl mx-auto">
+                        The MathTech Thinking Foundation (referred to in short as MTTF or the
+                        Foundation) is governed by the board of directors of the foundation and
+                        the Executive Members. The board of directors includes three office-bearers of the foundation. These honourary office bearers are:
+                    </p>
+                </div>
+                <div className="flex flex-wrap justify-center px-4">
+                    {governingBody.map((member) => (
+                        <div key={member.memberId} className="w-[30%] mt-12">
+                            <GoverningBodyCard member={member} />
+                        </div>
+                    ))}
+                </div>
             </div>
+                
+            {/* advisorcomittee.................. */}
+            <AdvisoryCommittee/>
         </>
     );
 }

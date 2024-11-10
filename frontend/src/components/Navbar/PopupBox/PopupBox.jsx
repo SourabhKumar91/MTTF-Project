@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function PopupBox({ linkBox, closeIcon }) {
     return (
         <div className="absolute w-full h-screen top-24 shadow-lg border-t-2 border-white">
-            <div className="bg-gradient-to-r px-4 lg:px-24 from-[#0c0c0e] to-[#342e69] w-full h-full relative">
+            <div className="bg-gradient-to-r px-4 lg:px-24 from-[#252a3d] to-[#3f4957] w-full h-full relative">
                 
                 <button
                     className="absolute top-4 right-6 text-white text-[50px] font-bold hover:text-gray-300 transition duration-200"
@@ -17,7 +17,7 @@ function PopupBox({ linkBox, closeIcon }) {
                     {linkBox.map((category, index) => (
                         <div key={index} className="flex-1 min-w-[200px] text-white space-y-4">
                             {category.links && (
-                                <h3 className="text-xl font-semibold">{category.heading}</h3>
+                                <h3 className="text-2xl font-semibold">{category.heading}</h3>
                             )}
                             
                             <ul className="space-y-2">

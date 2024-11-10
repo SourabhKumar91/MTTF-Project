@@ -13,7 +13,7 @@ const GoverningBodyCard = ({ member }) => {
             <h2 className="text-lg text-gray-800 font-semibold title-font mb-2 text-center">{member.name}</h2>
             <p className="text-md text-gray-600 mb-1 text-center">{member.position}</p>
             <p className="text-md text-gray-500 text-center">{member.memberId}</p>
-            <button className="w-[50%] mt-3 px-6 py-2 text-blue-700 text-lg rounded-md hover:bg-blue-400 
+            <button className="w-[80%] mt-3 px-6 py-2 text-blue-700 text-lg rounded-md hover:bg-blue-400 
              hover:text-white     transition duration-200">
                 View Profile...
             </button>

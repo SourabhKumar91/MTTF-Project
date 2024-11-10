@@ -76,11 +76,23 @@ const navItems = {
     whoWeAre: [
         {
             heading: "Our Organisation",
-            link: "/about"
+            links: [
+                {
+                    linkName : "Leaders",
+                    path: "/about/governingbody"
+                }
+            ]
+
         },
         {
-            heading: "Leaders",
-            link: " "
+            heading: "About MTTF",
+            links: [
+                {
+                    linkName : "About",
+                    path: "/about"
+                }
+            ]
+
         }
     ]
 }

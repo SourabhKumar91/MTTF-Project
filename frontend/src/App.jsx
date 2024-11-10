@@ -24,7 +24,6 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/about/governingbody' element={<GoverningBody />} />
-          <Route path='/about/advisorycommittee' element={<AdvisoryCommittee />} />
           <Route path='/membership/individual' element={<IndividualMembership />} />
           <Route path='/membership/institutional' element={<InstitutionalMembership />} />
           <Route path='/chapters/about' element={<AboutChepter />} />

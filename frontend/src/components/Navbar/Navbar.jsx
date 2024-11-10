@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from '../Logo/Logo';
 import SideBar from './sidebar';
 import { Link } from 'react-router-dom';
@@ -25,6 +25,16 @@ function Navbar() {
         });
     };
 
+    useEffect(() => {
+        const isPopupOpen = show.whatWeDo || show.whoWeAre;
+        document.body.style.overflow = isPopupOpen ? 'hidden' : 'auto';
+        
+        return () => {
+           
+            document.body.style.overflow = 'auto';
+        };
+    }, [show]);
+
 
     return (
         <>
@@ -39,9 +49,9 @@ function Navbar() {
 
                     <div className="flex-1 flex justify-center items-center text-[#FFFFFF]">
                         <nav className="hidden lg:flex space-x-4 font-medium">
-                            <button className="border-none px-6" onClick={() => handleBtnClick("whatWeDo")}>What We do </button>
-                            <Link to="/"><button className="border-none px-6" onClick={() => handleBtnClick("whatWeThink")}>What We Think</button></Link>
-                            <button className="border-none px-6" onClick={() => handleBtnClick("whoWeAre")}>Who We Are</button>
+                            <button className={`border-none px-3 ${show.whatWeDo ? " bg-slate-200 text-blue-500 rounded-lg py-1 ": ""}`} onClick={() => handleBtnClick("whatWeDo")}>What We do </button>
+                            <Link to="/"><button className="border-none px-3 py-2" onClick={() => handleBtnClick("whatWeThink")}>What We Think</button></Link>
+                            <button className={`border-none px-3 ${show.whoWeAre ? " bg-slate-200 text-blue-500 rounded-lg py-1 ": ""}`} onClick={() => handleBtnClick("whoWeAre")}>Who We Are</button>
                         </nav>
                     </div>
 
