@@ -8,7 +8,7 @@ function PopupBox({ linkBox, closeIcon }) {
                 
                 <button
                     className="absolute top-4 right-6 text-white text-[50px] font-bold hover:text-gray-300 transition duration-200"
-                    onClick={() => closeIcon({ whatWeDo: false, whatWeThink: false, whoWeAre: false })}
+                    onClick={() => closeIcon(null)}
                 >
                     &times;
                 </button>
@@ -27,7 +27,7 @@ function PopupBox({ linkBox, closeIcon }) {
                                             <Link
                                                 to={link.path}
                                                 className="block text-white hover:bg-gray-800 p-2 rounded-md transition-colors duration-200"
-                                                onClick={() => closeIcon({ whatWeDo: false, whatWeThink: false, whoWeAre: false })}
+                                                onClick={() => closeIcon(null)}
                                             >
                                                 {link.linkName}
                                             </Link>

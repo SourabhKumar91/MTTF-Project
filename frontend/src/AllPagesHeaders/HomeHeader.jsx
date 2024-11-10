@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { headingAnimation } from '../GsapAnimation/Gsap';
 import introVideo from "../assets/introMTTF.mp4";
+import { Link } from 'react-router-dom';
 
 function HomeHeader() {
     const headingRef = useRef();
@@ -38,10 +39,12 @@ function HomeHeader() {
             <p className='text-center md:text-start text-sm lg:text-[1.5rem] font-custom1 md:mt-6 mt-4 text-[#F1F3F6] mx-4'>
                 International association for Science, Technology, Engineering and Mathematics professor
             </p>
-            <button className='bg-[#03518F] px-7 py-3 text-[15px] font-bold rounded-full text-white md:mt-10 mt-8'>
-                <span>Learn More</span>
-            </button>
-            
+            <Link to={"/about"}>
+                <button className='bg-[#03518F] px-7 py-3 text-[15px] font-bold rounded-full text-white md:mt-10 mt-8'>
+                    <span>Learn More</span>
+                </button>
+            </Link>
+
             <div className='flex justify-center items-center mt-10 relative'>
                 <div className='md:px-12 px-8 relative'>
                     {/* Video Element */}

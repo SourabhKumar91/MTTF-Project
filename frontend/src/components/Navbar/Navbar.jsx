@@ -7,33 +7,25 @@ import navItems from '../../assets/navitems'
 
 function Navbar() {
     const [togled, setTogled] = useState(false);
-    const [show, setShow] = useState({
-        whatWeDo: false,
-        whatWeThink: false,
-        whoWeAre: false,
-    });
+    const [selected, setSelected] = useState(null);
     
     const handelClick = () => {
         setTogled(prev => !prev);
     };
 
     const handleBtnClick = (name) => {
-        setShow({
-            whatWeDo: name === "whatWeDo",
-            whatWeThink: false,
-            whoWeAre: name === "whoWeAre",
-        });
+        setSelected(name);
     };
 
     useEffect(() => {
-        const isPopupOpen = show.whatWeDo || show.whoWeAre;
+        const isPopupOpen = selected;
         document.body.style.overflow = isPopupOpen ? 'hidden' : 'auto';
         
         return () => {
            
             document.body.style.overflow = 'auto';
         };
-    }, [show]);
+    }, [selected]);
 
 
     return (
@@ -49,9 +41,9 @@ function Navbar() {
 
                     <div className="flex-1 flex justify-center items-center text-[#FFFFFF]">
                         <nav className="hidden lg:flex space-x-4 font-medium">
-                            <button className={`border-none px-3 ${show.whatWeDo ? " bg-slate-200 text-blue-500 rounded-lg py-1 ": ""}`} onClick={() => handleBtnClick("whatWeDo")}>What We do </button>
-                            <Link to="/"><button className="border-none px-3 py-2" onClick={() => handleBtnClick("whatWeThink")}>What We Think</button></Link>
-                            <button className={`border-none px-3 ${show.whoWeAre ? " bg-slate-200 text-blue-500 rounded-lg py-1 ": ""}`} onClick={() => handleBtnClick("whoWeAre")}>Who We Are</button>
+                            <button className={`border-none px-3 ${selected == "whatWeDo" ? " bg-slate-200 text-blue-500 rounded-lg py-1 ": ""}`} onClick={() => handleBtnClick("whatWeDo")}>What We do </button>
+                            <Link to="/"><button className="border-none px-3 py-2" /*onClick={() => handleBtnClick("whatWeThink")} */>What We Think</button></Link>
+                            <button className={`border-none px-3 ${selected == "whoWeAre" ? " bg-slate-200 text-blue-500 rounded-lg py-1 ": ""}`} onClick={() => handleBtnClick("whoWeAre")}>Who We Are</button>
                         </nav>
                     </div>
 
@@ -62,13 +54,7 @@ function Navbar() {
                     </div>
                 </div>
 
-                {show.whatWeDo && (
-                   <PopupBox linkBox={navItems.whatWeDo} closeIcon={setShow}/>
-                )}
-                
-                {show.whoWeAre && (
-                     <PopupBox linkBox={navItems.whoWeAre} closeIcon={setShow}/>
-                )}
+                {selected && <PopupBox linkBox={navItems[selected]} closeIcon={setSelected}/> }
 
             </header>
         </>
