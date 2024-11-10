@@ -51,11 +51,11 @@ const navItems = {
             links: [
                 
                 {
-                    linkName: "Student Chepter",
+                    linkName: "Student Chapter",
                     path: "/chapters/students"
                 },
                 {
-                    linkName: "About Chepter",
+                    linkName: "About Chapter",
                     path: "/chapters/about"
                 },
                
