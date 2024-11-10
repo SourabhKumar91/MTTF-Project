@@ -2,7 +2,7 @@ import React from 'react';
 
 const GoverningBodyCard = ({ member }) => {
     return (
-        <div className="bg-white p-6 rounded-lg shadow-lg m-4 transition-transform transform hover:scale-105 flex flex-col items-center">
+        <div className="bg-white  md:p-6 rounded-lg shadow-lg m-4 transition-transform transform hover:scale-105 flex flex-col items-center">
             <div className="mb-4">
                 <img
                     src={member.img}

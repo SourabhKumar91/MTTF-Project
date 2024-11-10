@@ -44,7 +44,7 @@ function GoverningBody() {
             </Body>
 
             {/* governingBody.................. */}
-            <div className="flex flex-col bg-slate-300 p-8 pt-24">
+            <div className="flex flex-col bg-slate-300 md:p-8 pt-24">
                 <div className="text-center mb-6">
                     <h1 className="text-4xl font-bold text-gray-800 mb-2">
                         The Governing Body
@@ -57,7 +57,7 @@ function GoverningBody() {
                 </div>
                 <div className="flex flex-wrap justify-center px-4">
                     {governingBody.map((member) => (
-                        <div key={member.memberId} className="w-[30%] mt-12">
+                        <div key={member.memberId} className=" w-full md:w-[50%] lg:w-[30%] mt-12 ">
                             <GoverningBodyCard member={member} />
                         </div>
                     ))}
