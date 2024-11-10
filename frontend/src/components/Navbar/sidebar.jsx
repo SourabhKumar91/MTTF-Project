@@ -50,52 +50,48 @@ const SideBar = React.memo(({ togled, setTogled, navItems }) => {
             <div className='mt-10 h-[68vh] flex flex-col gap-10 overflow-y-auto custom-scrollbar mb-5'>
                 {Object.keys(navItems).map(sectionKey => (
                     <div key={sectionKey} className='space-y-2'>
-                        <button className='w-full text-left' onClick={() => toggleItem(sectionKey)}>
-                            <div className='flex justify-between'>
-                                <div className='flex gap-3 items-center'>
-                                    <img src={right_arrow} alt="Right arrow" className={`h-4 transition-transform ${expandedSections[sectionKey] ? 'rotate-90' : ''}`} />
-                                    <span className='text-2xl font-medium'>{sectionKey.replace(/([A-Z])/g, ' $1')}</span>
-                                </div>
-                            </div>
-                        </button>
-
-                        {expandedSections[sectionKey] && (
-                            <div className='px-5 pt-4 flex flex-col gap-4'>
-                                {navItems[sectionKey].map(section => (
-                                    <div key={section.heading}>
-                                        <h2 className="text-md font-semibold text-gray-700">{section.heading}</h2>
-                                        <ul className="ml-4 mt-2 space-y-2">
-                                            {section.links.map(link => (
-                                                <li key={link.path}>
-                                                    <Link to={link.path} className="text-sm text-gray-600" onClick={handleClose}>
-                                                        {link.linkName}
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
+                        {Array.isArray(navItems[sectionKey]) ? (
+                            <>
+                                <button className='w-full text-left' onClick={() => toggleItem(sectionKey)}>
+                                    <div className='flex justify-between'>
+                                        <div className='flex gap-3 items-center'>
+                                            <img src={right_arrow} alt="Right arrow" className={`h-4 transition-transform ${expandedSections[sectionKey] ? 'rotate-90' : ''}`} />
+                                            <span className='text-2xl font-medium'>{sectionKey.replace(/([A-Z])/g, ' $1')}</span>
+                                        </div>
                                     </div>
-                                ))}
+                                </button>
+
+                                {expandedSections[sectionKey] && (
+                                    <div className='px-5 pt-4 flex flex-col gap-4'>
+                                        {navItems[sectionKey]?.map(section => (
+                                            <div key={section.heading}>
+                                                <h2 className="text-md font-semibold text-gray-700">{section.heading}</h2>
+                                                <ul className="ml-4 mt-2 space-y-2">
+                                                    {section.links?.map(link => (
+                                                        <li key={link.path}>
+                                                            <Link to={link.path} className="text-sm text-gray-600" onClick={handleClose}>
+                                                                {link.linkName}
+                                                            </Link>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
+                            </>
+                        ) : (
+                            <div className='flex justify-between'>
+                                <Link to={navItems[sectionKey]?.link || '#'} onClick={handleClose}>
+                                    <div className='flex gap-3 items-center'>
+                                        <img src={right_arrow} alt="Right arrow" className="h-4 transition-transform" />
+                                        <span className='text-2xl font-medium'>{sectionKey.replace(/([A-Z])/g, ' $1')}</span>
+                                    </div>
+                                </Link>
                             </div>
                         )}
                     </div>
                 ))}
-                <div className='flex justify-between'>
-                    <Link to={""} onClick={handleClose}>
-                        <div className='flex gap-3 items-center'>
-                            <img src={right_arrow} alt="Right arrow" className={`h-4 transition-transform`} />
-                            <span className='text-2xl font-medium'>What We Think</span>
-                        </div>
-                    </Link>
-                </div>
-            </div>
-
-            <div className='flex justify-center items-center w-full mb-5'>
-                <button className="inline-flex font-serif text-lg text-[#EEEEEE] items-center bg-[#03518F] border-0 py-3 px-6 focus:outline-none hover:bg-[#8bb6da] rounded w-full justify-center">
-                    Member Login
-                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </button>
             </div>
         </div>
     );

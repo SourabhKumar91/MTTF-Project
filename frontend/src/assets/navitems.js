@@ -1,41 +1,12 @@
 const navItems = {
     whatWeDo: [
         {
-            heading: "Industry",
-            links: [
-                {
-                    linkName: "supply chain",
-                    path: ""
-                },
-                {
-                    linkName: "Banking",
-                    path: ""
-                },
-                {
-                    linkName: "Netural Resourse",
-                    path: ""
-                },
-                {
-                    linkName: "Health",
-                    path: ""
-                },
-                {
-                    linkName: "High Tech",
-                    path: ""
-                },
-                {
-                    linkName: "Life Science",
-                    path: ""
-                },
-                {
-                    linkName: "Software & Platform",
-                    path: ""
-                },
-            ]
-        },
-        {
             heading: "Capability",
             links: [
+                {
+                    linkName: "Data & artificial Inteligence",
+                    path: "/Services/data&artificialInteligence"
+                },
                 {
                     linkName: "Data Analytics",
                     path: "/Services/dataanalytics"
@@ -46,6 +17,10 @@ const navItems = {
             heading: "Membership",
             links: [
                 {
+                    linkName: "Login",
+                    path: "https://www.mttf.in/member-login/"
+                },
+                {
                     linkName: "Individual Membership",
                     path: "/membership/individual"
                 },
@@ -55,37 +30,24 @@ const navItems = {
                 },
             ]
         },
-
-    ],
-    
-    whoWeAre: [
         {
-            heading: "General Information",
+            heading: "Awards",
             links: [
-                {
-                    linkName: "Home",
-                    path: "/"
-                },
-                {
-                    linkName: "About",
-                    path: "/about"
-                },
-                {
-                    linkName: "Governing Body",
-                    path: "/about/governingbody"
-                },
-                {
-                    linkName: "Advisory Committee",
-                    path: "/about/advisorycommittee"
-                },
                 
+                {
+                    linkName: "Awards 2025",
+                    path: "/awards/2025"
+                },
+                {
+                    linkName: "Awards 2024",
+                    path: "/awards/2024"
+                },
                
 
             ]
         },
-        
         {
-            heading: "Chepters",
+            heading: "Chapters",
             links: [
                 
                 {
@@ -101,21 +63,25 @@ const navItems = {
             ]
         },
         {
-            heading: "Event's Awards",
+            heading: "Events",
             links: [
-                
                 {
-                    linkName: "Awards 2025",
-                    path: "/awards/2025"
-                },
-                {
-                    linkName: "Awards 2024",
-                    path: "/awards/2024"
-                },
-               
-
+                    linkName : "Upcoming Events",
+                    path: "https://www.mttf.in/events-2/"
+                }
             ]
+        }
+    ],
+    
+    whoWeAre: [
+        {
+            heading: "Our Organisation",
+            link: "/about"
         },
+        {
+            heading: "Leaders",
+            link: " "
+        }
     ]
 }
 
